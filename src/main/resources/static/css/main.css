@@ -1,0 +1,203 @@
+
+/* All */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* nav */
+
+nav {
+    background-color: white;
+    height: 50px; /* 원하는 높이로 조정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* nav의 하위 요소들을 가로로 정렬 */
+    justify-content: space-between; /* 요소들을 가운데 정렬하고 각 요소 간격을 균등하게 조정 */
+    align-items: center; /* 요소들을 수직으로 중앙 정렬 */
+}
+
+
+.logo {
+    margin-left: 20px; /* 왼쪽 여백 조정 */
+}
+
+.nav-area {
+    display: flex; /* ul을 가로로 정렬 */
+}
+
+.list {
+    list-style: none; /* 리스트 스타일 제거 */
+    display: flex; /* li를 가로로 정렬 */
+}
+
+.list li {
+    margin-right: 30px; /* 각 항목 별 오른쪽 마진 조정 */
+}
+
+.util {
+    display: flex; /* 요소들을 가로로 정렬 */
+}
+
+.util-menu {
+    margin-right: 20px; /* 각 메뉴 별 오른쪽 마진 조정 */
+}
+
+.search {
+    margin-right: 20px; /* 검색 아이콘 오른쪽 마진 조정 */
+}
+
+
+.util-menu {
+    display: inline-block; /* inline-block 설정으로 요소 가로 정렬 */
+    padding: 10px; /* 버튼 패딩 설정 */
+    border: 2px solid #000; /* 테두리 스타일 설정 */
+    color: #000; /* 텍스트 색상 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 30px; /* 테두리 동그랗게 설정 */
+}
+
+.util-menu:hover {
+    background-color: dodgerblue; /* 마우스 오버 시 배경 색상 변경 */
+    color: dodgerblue; /* 마우스 오버 시 텍스트 색상 변경 */
+}
+
+
+
+
+
+
+
+
+
+/* body */
+body {
+    background-color: #ffffff;
+    margin-bottom: 100px;
+}
+
+
+
+
+/* main */
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list_tab {
+    display: flex; /* Arrange the list items horizontally */
+    justify-content: center; /* Center the list items horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default list padding */
+    background-color: #f0f0f0; /* Set the background color to gray */
+    width: 100%; /* Set the width to span the entire width of the container */
+}
+
+.list_tab li {
+    margin: 0 5px; /* Optional: Add some spacing between the buttons */
+    border-right: 1px solid #ccc; /* Add a right border to create the separator effect */
+}
+
+.list_tab li:last-child {
+    border-right: none; /* Remove right border for the last list item */
+}
+
+.list_tab li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.list_tab li a:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+/* 게시물 인터페이스 스타일 */
+.post {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    width: calc(25% - 20px);
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.post:nth-child(4n){
+    margin-right: 0;
+}
+
+.post-info {
+    text-align: center;
+}
+
+.post-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.post-content {
+    margin: 10px 0;
+}
+
+.read-more {
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+/*footer*/
+
+/* Footer 스타일 */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* font */
+@font-face {
+    font-family: 'KakaoBold';
+    src: url('static/fonts/KakaoBold.ttf') format('truetype');
+}
+
+.logo .title {
+    font-family: 'KakaoBold', sans-serif;
+}
+
+
+
+/* etc */
+
+
+a {
+    color: inherit; /* 상위 요소의 색상 상속 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+a:hover {
+    text-decoration: none; /* 마우스 오버 시 밑줄 제거 */
+}
+

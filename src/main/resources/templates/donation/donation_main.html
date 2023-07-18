@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:replace="~{/fragments/header.html :: fragment-header}"></div>
+</head>
+
+<body>
+<div th:replace="~{/fragments/nav.html :: fragment-nav}"></div>
+
+<!-- 페이지 소스 -->
+<div class="main">
+    <div class="container">
+        <ul class="list_tab tab_type6">
+            <li routerlinkactive="on">
+                <a class="link_tab" data-tiara-layer="tab tab_now" data-tiara-action-name="now_클릭"
+                   href="/fundraisings/now">
+                    <span class="txt_tab">모금중</span>
+                </a>
+            </li>
+            <li routerlinkactive="on" class="on">
+                <a class="link_tab" data-tiara-layer="tab tab_epilogue" data-tiara-action-name="epilogue_클릭"
+                   href="/fundraisings/epilogue">
+                    <span class="txt_tab">모금후기</span>
+                </a>
+            </li>
+            <li routerlinkactive="on">
+                <a class="link_tab" data-tiara-layer="tab tab_campaigns" data-tiara-action-name="campaigns_클릭"
+                   href="/fundraisings/campaigns">
+                    <span class="txt_tab">나눔캠페인</span>
+                </a>
+            </li>
+            <!---->
+        </ul>
+    </div>
+    <div id="icon_list">
+
+    </div>
+    <div id="post">
+
+    </div>
+
+
+
+
+
+
+</div>
+<!-- 페이지 소스 -->
+
+<footer th:replace="~{/fragments/footer.html :: fragment-footer}"></footer>
+</body>
+
+</html>

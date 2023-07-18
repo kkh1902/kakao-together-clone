@@ -1,10 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <div th:replace="~{/fragments/header.html :: fragment-header}"></div>
 </head>
+
 <body>
-$END$
+<div th:replace="~{/fragments/nav.html :: fragment-nav}"></div>
+
+<!-- 페이지 소스 -->
+<div class="main">
+    <div class="container">
+
+        <!-- Bulletin Board / Forum Section -->
+        <div class="bulletin-board">
+            <!-- Iterate over posts and display dynamically -->
+
+            <div class="post-album">
+                <div class="post-card" th:each="post : ${posts}">
+                    <div class="post-image">
+                        <!-- Add an image for the post if available -->
+<!--                        <img th:if="${post.image}" th:src="${post.image}" alt="Post Image" />-->
+                    </div>
+                    <div class="post-info">
+                        <!-- Post title -->
+                        <h2 class="post-title" th:text="${post.title}">Post Title</h2>
+                        <!-- Post content -->
+                        <p class="post-content" th:text="${post.text}">Post content goes here...</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<!-- 페이지 소스 -->
+
+<footer th:replace="~{/fragments/footer.html :: fragment-footer}"></footer>
 </body>
+
 </html>
+

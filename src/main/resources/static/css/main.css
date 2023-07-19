@@ -90,55 +90,61 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .list_tab {
-    display: flex; /* Arrange the list items horizontally */
-    justify-content: center; /* Center the list items horizontally */
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default list padding */
-    background-color: #f0f0f0; /* Set the background color to gray */
-    width: 100%; /* Set the width to span the entire width of the container */
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    width: 100%;
 }
 
 .list_tab li {
-    margin: 0 5px; /* Optional: Add some spacing between the buttons */
-    border-right: 1px solid #ccc; /* Add a right border to create the separator effect */
-}
-
-.list_tab li:last-child {
-    border-right: none; /* Remove right border for the last list item */
+    margin: 0 5px;
 }
 
 .list_tab li a {
-    display: block;
-    padding: 10px 20px;
+    display: flex;
+    align-items: center; /* Center the items vertically */
     text-decoration: none;
     color: #333;
+}
+
+.list_tab li a span {
+    margin-left: 5px; /* Add some space between the icon and text */
 }
 
 .list_tab li a:hover {
     background-color: #f0f0f0;
 }
 
-
-
-
-
-/* 게시물 인터페이스 스타일 */
-.post {
-    display: inline-block;
-    border: 1px solid black;
-    padding: 10px;
-    width: calc(25% - 20px);
-    margin-right: 10px;
-    margin-bottom: 20px;
+.donation {
+    background-color: #f0f0f0; /* Gray background color */
+    padding: 10px; /* Add some padding for spacing */
+    margin-bottom: 20px; /* Optional: Add bottom margin */
 }
 
-.post:nth-child(4n){
+/* CSS for the gallery-style post section */
+#post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the posts horizontally */
+}
+
+.post {
+    width: calc(25% - 20px); /* Set width to 25% minus the margins */
+    margin: 0 10px 20px; /* Add left and right margins and bottom margin */
+    background-color: #f0f0f0; /* Optional: Add background color for better visualization */
+    border: 1px solid black; /* Optional: Add border for better visualization */
+    padding: 10px; /* Optional: Add padding for better visualization */
+}
+
+/* Clear the margin for every fourth post */
+.post:nth-child(4n) {
     margin-right: 0;
 }
+
 
 .post-info {
     text-align: center;
@@ -153,11 +159,45 @@ body {
     margin: 10px 0;
 }
 
-.read-more {
-    display: block;
-    text-align: center;
+.donation-progress {
+    margin-top: 10px;
 }
 
+@media (max-width: 1200px) {
+    .post:nth-child(4n) {
+        margin-right: 10px;
+    }
+}
+
+/* Clear the margin for every third post on smaller screens */
+@media (max-width: 992px) {
+    .post:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+/* Ensure there are no gaps on the last row on smaller screens */
+@media (max-width: 992px) {
+    .post:nth-child(3n) {
+        margin-right: 10px;
+    }
+}
+
+/* Stack posts vertically on smaller screens */
+@media (max-width: 768px) {
+    .post {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* donation icon */
+#icon_list {
+    margin-bottom: 30px;
+}
 
 
 

@@ -22,13 +22,16 @@ public class Post extends BaseTimeEntity {
     private String subTopic;
     private String topic;
     private String title;
+    private String category;
     private String author;
+    private String paragraph;
+    private String amount;
     private Double targetAmount;
     private LocalDateTime createdDate;
     private String thumbnail;
     private String bodyTopic1;
     private String text;
-    private String image1;
+    private String imageSrc;
     private String videoLink;
     private String tag1;
     private String tag2;

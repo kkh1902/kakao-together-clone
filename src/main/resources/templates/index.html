@@ -1,45 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-
+<html>
 <head>
-    <div th:replace="~{/fragments/header.html :: fragment-header}"></div>
+  <div th:replace="~{/fragments/header.html :: fragment-header}"></div>
 </head>
-
 <body>
-<div th:replace="~{/fragments/nav.html :: fragment-nav}"></div>
-
-<!-- 페이지 소스 -->
 <div class="main">
-    <div class="container">
+  <div th:replace="~{/fragments/upheader.html :: fragment-upheader}"></div>
+  <div th:replace="~{/fragments/nav.html :: fragment-nav}"></div>
 
-        <!-- Bulletin Board / Forum Section -->
-        <div class="bulletin-board">
-            <!-- Iterate over posts and display dynamically -->
+  <div class="filterbutton">
+    <a class="image-24-parent" href="/all">
+      <img class="image-24-icon" alt="" src="../../images/icons/all.png" />
 
-            <div class="post-album">
-                <div class="post-card" th:each="post : ${posts}">
-                    <div class="post-image">
-                        <!-- Add an image for the post if available -->
-<!--                        <img th:if="${post.image}" th:src="${post.image}" alt="Post Image" />-->
-                    </div>
-                    <div class="post-info">
-                        <!-- Post title -->
-                        <h2 class="post-title" th:text="${post.title}">Post Title</h2>
-                        <!-- Post content -->
-                        <p class="post-content" th:text="${post.text}">Post content goes here...</p>
-                    </div>
-                </div>
-            </div>
+      <div class="div8">전체</div>
+    </a>
+    <a class="image-25-parent" href="/child">
+      <img class="image-25-icon" alt="" src="../../images/icons/child.png" />
 
 
+      <div class="div9">어린이</div>
+    </a>
+    <a class="image-26-parent" href="/old">
+      <img class="image-26-icon" alt="" src="../../images/icons/old.png" />
 
-        </div>
+      <div class="div9">어르신</div>
+    </a>
+  </div>
+
+  <div class="datefilter">
+    <div class="datefilter-child"></div>
+    <div class="parent1">
+      <a class="div5" href="/recommend">추천순</a>
+      <a class="div6" href="/latest">최신순</a>
+      <a class="div7" href="/final">종료임박순</a>
     </div>
+  </div>
+
+  <div class="posts">
+    <!-- Iterate through the list of posts -->
+    <div th:each="post, iterStat : ${posts}" class="content-box" th:classappend="${iterStat.index < 4} ? 'vertical-layout' : 'additional-posts'">
+      <div class="content-box1">
+        <img th:src="${post.imageSrc}" class="placeholder-picture1" alt="Post Image" />
+
+        <div class="icon-container">
+          <img
+                  class="icon-jam-icons-outline-l"
+                  alt=""
+                  src="./public/icon--jamicons--outline--logos--pictures.svg"
+          />
+        </div>
+        <div class="content">
+          <div class="title-category">
+            <div class="category">
+              <p th:text="${post.category}" class="p"></p>
+            </div>
+            <b th:text="${post.title}" class="title"></b>
+          </div>
+          <div th:text="${post.paragraph}" class="paragraph"></div>
+          <div class="user-card">
+            <div class="line-indicator-wrapper">
+              <div class="line-indicator"></div>
+            </div>
+            <div class="details">
+              <div th:text="${post.amount}" class="category1"></div>
+              <div class="category2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-group">
+          <div class="button-1">
+            <img
+                    class="icon-jam-icons-outline-l1"
+                    alt=""
+                    src="./public/icon--jamicons--outline--logos--plus.svg"
+            />
+
+            <div class="separator-left"></div>
+            <div class="text-container">
+              <div class="button-text1">Button Text</div>
+            </div>
+            <div class="separator-right"></div>
+            <img
+                    class="icon-jam-icons-outline-l1"
+                    alt=""
+                    src="./public/icon--jamicons--outline--logos--arrowright.svg"
+            />
+          </div>
+          <div class="button-2">
+            <img
+                    class="icon-jam-icons-outline-l1"
+                    alt=""
+                    src="./public/icon--jamicons--outline--logos--plus1.svg"
+            />
+
+            <div class="text-container">
+              <div class="button-text1">Button Text</div>
+            </div>
+            <img
+                    class="icon-jam-icons-outline-l1"
+                    alt=""
+                    src="./public/icon--jamicons--outline--logos--arrowright1.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div th:replace="~{/fragments/footer.html :: fragment-footer}"></div>
 </div>
-<!-- 페이지 소스 -->
-
-<footer th:replace="~{/fragments/footer.html :: fragment-footer}"></footer>
 </body>
-
 </html>
-

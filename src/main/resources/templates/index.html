@@ -37,7 +37,7 @@
   </div>
 
   <div class="posts">
-    <!-- Iterate through the list of posts -->
+    <!-- Iterate through the list of posdts -->
     <div th:each="post, iterStat : ${posts}" class="content-box" th:classappend="${iterStat.index < 4} ? 'vertical-layout' : 'additional-posts'">
       <div class="content-box1">
         <img th:src="${post.imageSrc}" class="placeholder-picture1" alt="Post Image" />

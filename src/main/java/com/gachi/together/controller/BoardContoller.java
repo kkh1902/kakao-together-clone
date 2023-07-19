@@ -119,4 +119,13 @@ public class BoardContoller {
         model.addAttribute("posts", posts);
         return "posts"; // Return the Thymeleaf template name
     }
+
+
+    @GetMapping("/suggest")
+    public String suggest(Model model) {
+        return "suggest/donationproposal"; // Return the Thymeleaf template name
+    }
+
+
+
 }

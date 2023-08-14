@@ -34,8 +34,6 @@ public class Post extends BaseTimeEntity {
     private String imageSrc;
     private String videoLink;
     private String tag1;
-    private String tag2;
-    private String tag3;
     private LocalDateTime endDate;
     private String mainCategory;
     private Double finalAmount;
@@ -43,4 +41,33 @@ public class Post extends BaseTimeEntity {
     // Constructors, getters, and setters
     // ...
 
+    // Additional fields for the properties you mentioned
+    private String thumbnailImage; // For storing the thumbnail image file name or URL
+    private String image; // For storing the main image file name or URL
+    private String longText; // For storing the long text content
+
+    // Additional getters and setters for the new fields
+    public String getThumbnailImage() {
+        return thumbnailImage;
+    }
+
+    public void setThumbnailImage(String thumbnailImage) {
+        this.thumbnailImage = thumbnailImage;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getLongText() {
+        return longText;
+    }
+
+    public void setLongText(String longText) {
+        this.longText = longText;
+    }
 }

@@ -1,243 +1,776 @@
-
-/* All */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, menu, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-
-/* nav */
-
-nav {
-    background-color: white;
-    height: 50px; /* 원하는 높이로 조정 */
+.container {
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex; /* nav의 하위 요소들을 가로로 정렬 */
-    justify-content: space-between; /* 요소들을 가운데 정렬하고 각 요소 간격을 균등하게 조정 */
-    align-items: center; /* 요소들을 수직으로 중앙 정렬 */
+    background-color: var(--color-black);
+    width: 1440px;
+    height: 199px;
+}
+.logo-style-guide-top,
+.wrapper {
+    position: absolute;
+    top: 42.04px;
+    left: 109.2px;
+    width: 261.31px;
+    height: 12.03px;
+}
+.wrapper {
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 199px;
+}
+.div {
+    position: relative;
+    line-height: 18px;
+    display: inline-block;
+    width: 191px;
+    height: 24px;
+    flex-shrink: 0;
+}
+.p {
+    margin: 0;
+}
+.line-roundedsearch-icon2 {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+}
+.sss {
+    position: relative;
+    line-height: 18px;
+}
+.group,
+.master-primary-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.master-primary-button {
+    border-radius: var(--br-11xl);
+    background-color: var(--color-black);
+    border: 2px solid var(--color-lightgray);
+    padding: var(--padding-lg) var(--padding-5xl);
+    justify-content: flex-end;
+    gap: var(--gap-5xs);
+    font-size: var(--heading-5-size);
+    color: var(--color-gray-100);
+}
+.group {
+    justify-content: flex-start;
+    gap: var(--gap-22xl);
+}
+.social-media-iconfacebook {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.frame-parent,
+.kakao-corp-parent {
+    display: flex;
+    justify-content: flex-start;
+}
+.kakao-corp-parent {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--gap-22xl);
+}
+.frame-parent {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 35px;
+    text-align: right;
+    font-size: var(--font-size-lg);
+    color: var(--color-dimgray-100);
+}
+.footer,
+.parent {
+    position: absolute;
+}
+.parent {
+    top: 48px;
+    left: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 397px;
+}
+.footer {
+    top: 1372px;
+    left: 0;
+    background-color: var(--color-black);
+    width: 1440px;
+    height: 215px;
+    overflow: hidden;
+    font-size: var(--font-size-6xl);
+    color: var(--color-gray-100);
+}
+.placeholder-picture1 {
+    align-self: stretch;
+    border-radius: var(--br-xl);
+    max-width: 100%;
+    overflow: hidden;
+    height: 220px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.icon-jam-icons-outline-l {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.icon-container {
+    align-self: stretch;
+    display: none;
+    flex-direction: row;
+    padding: 0 var(--padding-base);
+    align-items: center;
+    justify-content: flex-start;
+}
+.category,
+.title {
+    position: relative;
+    line-height: 110%;
+}
+.category {
+    font-weight: 500;
+}
+.title {
+    font-size: var(--heading-5-size);
+    display: none;
+    width: 348px;
+}
+.title-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-9xs);
+}
+.paragraph {
+    align-self: stretch;
+    position: relative;
+    line-height: 140%;
+    color: var(--color-gainsboro);
+}
+.line-indicator {
+    position: relative;
+    border-radius: var(--br-3xs);
+    background-color: var(--primary-60);
+    width: 40px;
+    height: 4px;
+}
+.line-indicator-wrapper {
+    border-radius: var(--br-3xs);
+    background-color: var(--coolgray-30);
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.category1,
+.category2 {
+    align-self: stretch;
+    position: relative;
+}
+.category1 {
+    line-height: 110%;
+    font-weight: 500;
+}
+.category2 {
+    line-height: 140%;
+    color: var(--coolgray-60);
+    text-align: left;
+    display: none;
+}
+.content,
+.details,
+.user-card {
+    display: flex;
+    justify-content: flex-start;
+}
+.details {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.content,
+.user-card {
+    align-self: stretch;
+    gap: var(--gap-base);
+}
+.user-card {
+    flex-direction: row;
+    padding: var(--padding-base) 0 0;
+    align-items: center;
+    text-align: right;
+}
+.content {
+    flex-direction: column;
+    padding: var(--padding-5xl) var(--padding-base) var(--padding-base);
+    align-items: flex-start;
+}
+.icon-jam-icons-outline-l1 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+}
+.separator-left {
+    border-right: 1px solid var(--color-gray-200);
+    box-sizing: border-box;
+    width: 12px;
+    display: none;
+}
+.button-text1 {
+    position: relative;
+    letter-spacing: 0.5px;
+    line-height: 100%;
+    font-weight: 500;
+}
+.text-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 var(--padding-base);
+    align-items: center;
+    justify-content: center;
+}
+.separator-right {
+    border-left: 1px solid var(--color-gray-200);
+    box-sizing: border-box;
+    width: 12px;
+    display: none;
+}
+.button-1,
+.button-2 {
+    flex: 1;
+    border: 2px solid var(--primary-60);
+    box-sizing: border-box;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-base) var(--padding-xs);
+    align-items: center;
+    justify-content: center;
+}
+.button-1 {
+    background-color: var(--primary-60);
+}
+.button-2 {
+    color: var(--primary-60);
+}
+.buttons-group {
+    align-self: stretch;
+    display: none;
+    flex-direction: row;
+    padding: var(--padding-base);
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    color: var(--neutral-colors-white);
+}
+.content-box,
+.content-box1,
+.posts,
+.posts1 {
+    height: 384px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.content-box1 {
+    background-color: var(--neutral-colors-white);
+    width: 256px;
+    align-items: center;
+}
+.content-box,
+.posts,
+.posts1 {
+    align-items: flex-start;
+}
+.posts,
+.posts1 {
+    position: absolute;
+    top: 383px;
+    left: 182px;
+    width: 1076px;
+    flex-direction: row;
+    gap: var(--gap-base);
+    font-size: var(--text-single-100-bold-size);
+    color: var(--coolgray-90);
+    font-family: var(--button-m);
+}
+.posts1 {
+    top: 788px;
+}
+.datefilter-child {
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    width: 10px;
+    height: 10px;
+}
+.div5 {
+    color: var(--color-black);
+}
+.div5,
+.div6,
+.div7 {
+    position: relative;
+    line-height: 110%;
+    display: inline-block;
+    width: 54px;
+    height: 25px;
+    flex-shrink: 0;
+}
+.div7 {
+    width: 87px;
+}
+.datefilter,
+.parent1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 26px;
+}
+.datefilter {
+    position: absolute;
+    top: 342px;
+    left: 975px;
+    align-items: center;
+    gap: 19px;
+    color: var(--color-gainsboro);
+}
+.image-24-icon {
+    position: relative;
+    width: 38.86px;
+    height: 40px;
+    object-fit: cover;
+}
+.div8 {
+    position: relative;
+    line-height: 18px;
+    display: inline-block;
+    width: 39px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.image-24-parent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-smi);
+}
+.image-25-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.div9 {
+    position: relative;
+    line-height: 18px;
+    display: inline-block;
+    width: 57px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.image-25-parent {
+    position: absolute;
+    top: 0;
+    left: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-smi);
+}
+.image-26-icon {
+    position: relative;
+    width: 41px;
+    height: 40px;
+    object-fit: cover;
+}
+.image-26-parent {
+    position: absolute;
+    top: 0;
+    left: 212px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--gap-smi);
 }
 
-
-.logo {
-    margin-left: 20px; /* 왼쪽 여백 조정 */
-}
-
-.nav-area {
-    display: flex; /* ul을 가로로 정렬 */
-}
-
-.list {
-    list-style: none; /* 리스트 스타일 제거 */
-    display: flex; /* li를 가로로 정렬 */
-}
-
-.list li {
-    margin-right: 30px; /* 각 항목 별 오른쪽 마진 조정 */
-}
-
-.util {
-    display: flex; /* 요소들을 가로로 정렬 */
-}
-
-.util-menu {
-    margin-right: 20px; /* 각 메뉴 별 오른쪽 마진 조정 */
-}
-
-.search {
-    margin-right: 20px; /* 검색 아이콘 오른쪽 마진 조정 */
-}
-
-
-.util-menu {
-    display: inline-block; /* inline-block 설정으로 요소 가로 정렬 */
-    padding: 10px; /* 버튼 패딩 설정 */
-    border: 2px solid #000; /* 테두리 스타일 설정 */
-    color: #000; /* 텍스트 색상 설정 */
-    text-decoration: none; /* 밑줄 제거 */
-    border-radius: 30px; /* 테두리 동그랗게 설정 */
-}
-
-.util-menu:hover {
-    background-color: dodgerblue; /* 마우스 오버 시 배경 색상 변경 */
-    color: dodgerblue; /* 마우스 오버 시 텍스트 색상 변경 */
-}
-
-
-
-
-
-
-
-
-
-/* body */
-body {
-    background-color: #ffffff;
-    margin-bottom: 100px;
-}
-
-
-
-
-/* main */
-.main .container {
+/* filter button*/
+.filter-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top: 80px; /* Adjust the margin-top value to create space below the nav */
 }
 
-.list_tab {
+.filterbutton {
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
-
-.list_tab li {
-    margin: 0 5px;
-}
-
-.list_tab li a {
-    display: flex;
-    align-items: center; /* Center the items vertically */
-    text-decoration: none;
-    color: #333;
-}
-
-.list_tab li a span {
-    margin-left: 5px; /* Add some space between the icon and text */
-}
-
-.list_tab li a:hover {
-    background-color: #f0f0f0;
-}
-
-.donation {
-    background-color: #f0f0f0; /* Gray background color */
-    padding: 10px; /* Add some padding for spacing */
-    margin-bottom: 20px; /* Optional: Add bottom margin */
-}
-
-/* CSS for the gallery-style post section */
-#post {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the posts horizontally */
-}
-
-.post {
-    width: calc(25% - 20px); /* Set width to 25% minus the margins */
-    margin: 0 10px 20px; /* Add left and right margins and bottom margin */
-    background-color: #f0f0f0; /* Optional: Add background color for better visualization */
-    border: 1px solid black; /* Optional: Add border for better visualization */
-    padding: 10px; /* Optional: Add padding for better visualization */
-}
-
-/* Clear the margin for every fourth post */
-.post:nth-child(4n) {
-    margin-right: 0;
-}
-
-
-.post-info {
+    max-width: 100%; /* Allow the container to expand to fit content */
+    height: 73px;
     text-align: center;
 }
 
-.post-title {
-    font-size: 1.2rem;
-    margin: 10px 0;
+.filterbutton a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Text color */
+    margin: 0 10px; /* Adjust the spacing between buttons */
+    flex: 1; /* Each button takes equal width */
+    max-width: 150px; /* Limit the maximum width of each button */
 }
 
-.post-content {
-    margin: 10px 0;
+.filterbutton img {
+    width: 50px; /* Adjust the image width as needed */
+    height: 50px; /* Adjust the image height as needed */
 }
 
-.donation-progress {
-    margin-top: 10px;
+.filterbutton .div8,
+.filterbutton .div9 {
+    margin-top: 5px; /* Adjust the distance between the image and text */
+    font-size: 14px; /* Adjust the font size as needed */
+}
+.filter-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-top: 80px; /* Adjust the margin-top value to create space below the nav */
 }
 
-@media (max-width: 1200px) {
-    .post:nth-child(4n) {
-        margin-right: 10px;
-    }
+.filterbutton {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%; /* Allow the container to expand to fit content */
+    height: 73px;
+    text-align: center;
 }
 
-/* Clear the margin for every third post on smaller screens */
-@media (max-width: 992px) {
-    .post:nth-child(3n) {
-        margin-right: 0;
-    }
+.filterbutton a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Text color */
+    margin: 0 10px; /* Adjust the spacing between buttons */
+    flex: 1; /* Each button takes equal width */
+    max-width: 150px; /* Limit the maximum width of each button */
 }
 
-/* Ensure there are no gaps on the last row on smaller screens */
-@media (max-width: 992px) {
-    .post:nth-child(3n) {
-        margin-right: 10px;
-    }
+.filterbutton img {
+    width: 50px; /* Adjust the image width as needed */
+    height: 50px; /* Adjust the image height as needed */
 }
 
-/* Stack posts vertically on smaller screens */
-@media (max-width: 768px) {
-    .post {
-        width: 100%;
-    }
-}
-
-
-
-
-
-/* donation icon */
-#icon_list {
-    margin-bottom: 30px;
+.filterbutton .div8,
+.filterbutton .div9 {
+    margin-top: 5px; /* Adjust the distance between the image and text */
+    font-size: 14px; /* Adjust the font size as needed */
 }
 
 
 
 
-/*footer*/
 
-/* Footer 스타일 */
-footer {
-    position: fixed;
+
+/*.filterbutton {*/
+/*    position: absolute;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*    top: 201px;*/
+/*    left: 586px;*/
+/*    max-width: 100%; !* Allow the container to expand to fit content *!*/
+/*    height: 73px;*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+
+
+.line-roundedpassword-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: none;
+}
+
+
+
+/* nav*/
+
+.link,
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.navbar {
+    position: absolute;
+    top: 32px;
+    left: calc(50% - 139px);
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+.container1,
+.nav {
+    position: absolute;
     left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
+    width: 1440px;
+}
+.nav {
+    top: 101px;
+    background-color: #f7f8f9;
+    height: 74px;
     text-align: center;
-    padding: 10px 0;
+    width: 100%;
+}
+.container1 {
+    top: 0;
+    background-color: var(--neutral-colors-white);
+    height: 101px;
+}
+.logo-style-guide-top1 {
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    width: 261.31px;
+    height: 34.35px;
+}
+.line-roundedchevron-down3,
+.line-roundedpassword-icon3 {
+    position: absolute;
+    top: 47px;
+    left: 670px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: none;
+}
+.line-roundedchevron-down3 {
+    top: 49px;
+    left: 1110px;
+}
+.div16 {
+    position: relative;
+    line-height: 18px;
+    display: inline-block;
+    width: 91px;
+    flex-shrink: 0;
+}
+.frame-parent2 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 62px;
+}
+.frame-parent1,
+.frame-parent2,
+.master-link {
+    flex-direction: row;
+    align-items: center;
+}
+.frame-parent1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 71px;
+}
+.master-link {
+    gap: var(--gap-7xs);
+}
+.frame-wrapper,
+.link-wrapper,
+.master-link,
+.parent2 {
+    display: flex;
+    justify-content: flex-start;
+}
+.link-wrapper {
+    flex-direction: column;
+    padding: var(--padding-3xs);
+    align-items: flex-start;
+}
+.frame-wrapper,
+.parent2 {
+    flex-direction: row;
+    align-items: center;
+}
+.frame-wrapper {
+    text-align: center;
+    font-size: var(--heading-5-size);
+}
+.parent2 {
+    gap: 134px;
+}
+.master-primary-button1,
+.master-primary-button2 {
+    border-radius: var(--br-11xl);
+    background-color: var(--neutral-colors-white);
+    border: 2px solid var(--color-lightgray);
+    display: flex;
+    flex-direction: row;
+    padding: var(--padding-lg) var(--padding-5xl);
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap-5xs);
+}
+.master-primary-button2 {
+    box-sizing: border-box;
+    width: 150px;
+    justify-content: center;
+}
+.master-primary-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: center;
+}
+.master-primary-button-parent {
+    gap: var(--gap-base);
+}
+.master-primary-button-parent,
+.nav-list-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-list {
+    width: 220px;
+    padding: 0 0 0 25px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+}
+.buttons-set,
+.frame-container,
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buttons-set {
+    width: 220px;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: var(--heading-5-size);
+}
+.frame-container {
+    justify-content: flex-start;
+    gap: 187px;
+}
+.line-roundedsearch-icon5 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.frame-group {
+    position: absolute;
+    top: 11px;
+    left: 27px;
+    width: 1398px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17px;
 }
 
 
-/* font */
-@font-face {
-    font-family: 'KakaoBold';
-    src: url('static/fonts/KakaoBold.ttf') format('truetype');
+
+
+/* Default styles for .header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    height: 101px;
+    font-size: var(--font-size-6xl);
 }
 
-.logo .title {
-    font-family: 'KakaoBold', sans-serif;
+/* Media query for screens wider than 1440px */
+@media screen and (min-width: 1441px) {
+    .header {
+        max-width: 100%;
+    }
+    .frame-group {
+        max-width: 100%; /* Set the max-width to 100% for screens wider than 1440px */
+        width: 100%; /* Set the width to 100% for screens wider than 1440px */
+        left: 0; /* Resetting the left position */
+        transform: none; /* Resetting the transform property */
+        justify-content: center; /* Center the contents horizontally on wider screens */
+    }
 }
 
 
 
-/* etc */
 
 
+.main {
+    position: relative;
+    background-color: var(--neutral-colors-white);
+    width: 100%;
+    height: 1587px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: var(--heading-5-size);
+    color: var(--color-black);
+    font-family: var(--font-kakao);
+
+}
+
+/* 전체 페이지 컨테이너에 대한 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 공통 */
 a {
-    color: inherit; /* 상위 요소의 색상 상속 */
-    text-decoration: none; /* 밑줄 제거 */
+    text-decoration: none; /* 밑줄 없애기 */
+    color: inherit;
 }
-
-a:hover {
-    text-decoration: none; /* 마우스 오버 시 밑줄 제거 */
-}
-

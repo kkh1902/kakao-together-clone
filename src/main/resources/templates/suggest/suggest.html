@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" th:href="@{/css/suggest.css}">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Kakao:wght@400;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=AppleSDGothicNeoR:wght@400&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+</head>
+<body>
+<div class="fundraisingspropose">
+    <div class="div143">글 등록하기</div>
+    <form th:action="@{/fundraisings/propose}" method="post">
+        <div class="frame-parent87">
+            <div class="parent32">
+                <div class="div144">제목</div>
+                <div class="field">
+                    <img class="icon-jam-icons-outline-l23" alt="" src="./public/icon--jamicons--outline--logos--search1.svg" />
+                    <input type="text" name="title" placeholder="제목을 작성해주세요" />
+                </div>
+            </div>
+            <div class="parent33">
+                <div class="div144">작성자</div>
+                <div class="field">
+                    <img class="icon-jam-icons-outline-l23" alt="" src="./public/icon--jamicons--outline--logos--search1.svg" />
+                    <input type="text" name="writer" placeholder="작성자를 작성해주세요" />
+                </div>
+            </div>
+            <div class="parent34">
+                <div class="div146">카테고리 분류</div>
+                <div class="frame-parent88">
+                    <div class="controls-parent">
+                        <input type="radio" name="category" value="같이 기부" id="togetherRadio">
+                        <label for="togetherRadio">같이 기부</label>
+                    </div>
+                    <div class="controls-group">
+                        <input type="radio" name="category" value="프로모션" id="promotionRadio">
+                        <label for="promotionRadio">프로모션</label>
+                    </div>
+                </div>
+            </div>
+            <div class="parent35">
+                <div class="div146">목표 금액</div>
+                <div class="field">
+                    <input type="text" name="goalmoney" placeholder="단위를 제외한 숫자를 작성해주세요 (ex. 100000)" />
+                </div>
+            </div>
+            <div class="parent35">
+                <div class="div146">기부 받은 금액</div>
+                <div class="field">
+                    <input type="text" name="goalmoney" placeholder="단위를 제외한 숫자를 작성해주세요 (ex. 100000)" />
+                </div>
+            </div>
+            <div class="frame-parent89">
+                <div class="wrapper19">
+                    <div class="div146">썸네일 등록</div>
+                </div>
+                <div class="field-parent">
+                    <div class="field4">
+                        <!-- Hidden file input -->
+                        <input type="file" id="fileInput" name="thumbnail" accept=".jpg, .jpeg, .png" style="display: none;" />
+
+                        <!-- Label for file input -->
+                        <label for="fileInput" id="fileInputLabel">
+                            <div class="text2">선택된 파일 없음</div>
+                        </label>
+                    </div>
+                    <img class="line-roundedfolder-icon" alt="" src="./public/line-roundedfolder.svg" />
+                </div>
+            </div>
+
+            <div class="parent37">
+                <div class="div146">주제1</div>
+                <div class="field">
+                    <input type="text" name="topic" placeholder="주제를 입력해주세요" />
+                </div>
+            </div>
+            <div class="parent38">
+                <div class="div146">본문1</div>
+                <div class="field6">
+                    <input class="field6input" type="text" name="content" placeholder="내용을 입력해주세요" />
+                </div>
+            </div>
+            <div class="parent39">
+                <div class="div146">이미지1</div>
+                <div class="field-parent">
+                    <div class="field4">
+                        <!-- Hidden file input -->
+                        <input type="file" id="imageInput" name="image1" accept=".jpg, .jpeg, .png" style="display: none;" />
+
+                        <!-- Label for file input -->
+                        <label for="imageInput" id="imageInputLabel">
+                            <img class="icon-jam-icons-outline-l23" alt="" src="./public/icon--jamicons--outline--logos--search1.svg" />
+                            <div class="text2">선택된 파일 없음</div>
+                            <img class="icon-jam-icons-outline-l23" alt="" src="./public/icon--jamicons--outline--logos--chevrondown6.svg" />
+                        </label>
+                    </div>
+                    <img class="line-roundedfolder-icon1" alt="" src="./public/line-roundedfolder1.svg" />
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="master-primary-button42">
+            <img
+                    class="line-roundedsearch-icon66"
+                    alt=""
+                    src="./public/line-roundedsearch29.svg"
+            />
+
+            <b type="submit" class="button-text23">등록하기</b>
+            <i class="bi bi-arrow-right-short"></i>
+        </button>
+    </form>
+    <div class="footer9">
+        <div class="wrapper20">
+            <div class="logo-style-guide-top25"></div>
+        </div>
+        <div class="frame-parent90">
+            <div class="wrapper21">
+                <a href="/" class="div155">
+                    <span>카카오</span>
+                    <b>같이가치</b>
+                </a>
+            </div>
+            <div class="frame-parent91">
+                <div class="parent40">
+                    <div class="div155">
+                        <p class="p33">당신의 착한 마음을 응원합니다.</p>
+                        <p class="p33">더 좋은 세상을 꿈꾼다면 지금 시작해보세요.</p>
+                    </div>
+                    <div class="master-primary-button43">
+                        <img
+                                class="line-roundedsearch-icon67"
+                                alt=""
+                                src="./public/line-roundedsearch26.svg"
+                        />
+
+                        <div class="div155">제안하기</div>
+                        <img
+                                class="line-roundedsearch-icon67"
+                                alt=""
+                                src="./public/line-roundedarrow-right7.svg"
+                        />
+                    </div>
+                </div>
+                <div class="kakao-corp-parent7">
+                    <div class="div155">@Kakao Corp.</div>
+                    <div class="div155">도움말</div>
+                    <div class="div155">이용약관</div>
+                    <div class="div155">개인정보처리방침</div>
+                    <img
+                            class="social-media-iconfacebook9"
+                            alt=""
+                            src="./public/social-media-iconfacebook.svg"
+                    />
+
+                    <img
+                            class="social-media-iconfacebook9"
+                            alt=""
+                            src="./public/social-media-icontwitter.svg"
+                    />
+
+                    <img
+                            class="social-media-iconfacebook9"
+                            alt=""
+                            src="./public/social-media-iconinstagram.svg"
+                    />
+
+                    <img
+                            class="social-media-iconfacebook9"
+                            alt=""
+                            src="./public/social-media-iconline.svg"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header23">
+        <div class="logo-style-guide-top26"></div>
+        <img
+                class="line-roundedpassword-icon83"
+                alt=""
+                src="./public/line-roundedpassword2.svg"
+        />
+
+        <img
+                class="line-roundedchevron-down85"
+                alt=""
+                src="./public/line-roundedchevron-down10.svg"
+        />
+
+        <div class="frame-parent92">
+            <div class="frame-parent93">
+                <div class="parent41">
+                    <a href="/" class="div160">
+                        <span>카카오</span>
+                        <b>같이가치</b>
+                    </a>
+                    <div class="frame-wrapper32">
+                        <div class="frame-wrapper33">
+                            <div class="frame-wrapper33">
+                                <div class="wrapper19">
+                                    <div class="master-link50">
+                                        <img
+                                                class="line-roundedsearch-icon66"
+                                                alt=""
+                                                src="./public/line-roundedpassword2.svg"
+                                        />
+
+                                        <div class="frame-parent94">
+                                            <div class="frame-wrapper33">
+                                                <div class="wrapper19">
+                                                    <div class="master-link50">
+                                                        <img
+                                                                class="line-roundedsearch-icon66"
+                                                                alt=""
+                                                                src="./public/line-roundedpassword2.svg"
+                                                        />
+
+                                                        <div class="div155">같</div>
+                                                        <img
+                                                                class="line-roundedsearch-icon66"
+                                                                alt=""
+                                                                src="./public/line-roundedchevron-down10.svg"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frame-parent95">
+                                                <div class="frame-wrapper33">
+                                                    <div class="wrapper19">
+                                                        <div class="master-link50">
+                                                            <img
+                                                                    class="line-roundedsearch-icon66"
+                                                                    alt=""
+                                                                    src="./public/line-roundedpassword2.svg"
+                                                            />
+
+                                                            <div class="div162">모두의행동</div>
+                                                            <img
+                                                                    class="line-roundedsearch-icon66"
+                                                                    alt=""
+                                                                    src="./public/line-roundedchevron-down10.svg"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="wrapper19">
+                                                    <img
+                                                            class="line-roundedsearch-icon66"
+                                                            alt=""
+                                                            src="./public/line-roundedpassword2.svg"
+                                                    />
+
+                                                    <div class="div155">더보기</div>
+                                                    <img
+                                                            class="line-roundedsearch-icon66"
+                                                            alt=""
+                                                            src="./public/line-roundedchevron-down10.svg"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="div155">Contact</div>
+                                        </div>
+                                        <img
+                                                class="line-roundedsearch-icon66"
+                                                alt=""
+                                                src="./public/line-roundedchevron-down10.svg"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-set16">
+                    <div class="nav-list16">
+                        <div class="nav-list-inner15">
+                            <div class="master-primary-button-parent15">
+                                <div
+                                        class="master-primary-button44"
+                                        id="masterPrimaryButton2"
+                                >
+                                    <img
+                                            class="line-roundedsearch-icon67"
+                                            alt=""
+                                            src="./public/line-roundedsearch13.svg"
+                                    />
+
+                                    <div class="div155">제안하기</div>
+                                    <img
+                                            class="line-roundedsearch-icon67"
+                                            alt=""
+                                            src="./public/line-roundedarrow-right7.svg"
+                                    />
+                                </div>
+                                <div
+                                        class="master-primary-button-wrapper14"
+                                        id="frameContainer31"
+                                >
+                                    <div class="master-primary-button45">
+                                        <img
+                                                class="line-roundedsearch-icon67"
+                                                alt=""
+                                                src="./public/line-roundedsearch30.svg"
+                                        />
+
+                                        <div class="div155">로그인</div>
+                                        <img
+                                                class="line-roundedsearch-icon67"
+                                                alt=""
+                                                src="./public/line-roundedarrow-right12.svg"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                    class="icon-jam-icons-outline-l27"
+                    alt=""
+                    src="./public/line-roundedsearch31.svg"
+            />
+        </div>
+        <div class="header24">
+            <div class="logo-style-guide-top26"></div>
+            <img
+                    class="line-roundedpassword-icon83"
+                    alt=""
+                    src="./public/line-roundedpassword2.svg"
+            />
+
+            <img
+                    class="line-roundedchevron-down85"
+                    alt=""
+                    src="./public/line-roundedchevron-down10.svg"
+            />
+
+            <div class="frame-parent92">
+                <div class="frame-parent93">
+                    <div class="parent41">
+                        <div class="div160">
+                            <span>카카오</span>
+                            <b>같이가치</b>
+                        </div>
+                        <div class="frame-wrapper32">
+                            <div class="frame-wrapper33">
+                                <div class="frame-wrapper33">
+                                    <div class="wrapper19">
+                                        <div class="master-link50">
+                                            <img
+                                                    class="line-roundedsearch-icon66"
+                                                    alt=""
+                                                    src="./public/line-roundedpassword2.svg"
+                                            />
+
+                                            <div class="frame-parent94">
+                                                <div class="frame-wrapper33">
+                                                    <div class="wrapper19">
+                                                        <div class="master-link50">
+                                                            <img
+                                                                    class="line-roundedsearch-icon66"
+                                                                    alt=""
+                                                                    src="./public/line-roundedpassword2.svg"
+                                                            />
+
+                                                            <a href="/" class="div155">홈</a>
+                                                            <img
+                                                                    class="line-roundedsearch-icon66"
+                                                                    alt=""
+                                                                    src="./public/line-roundedchevron-down10.svg"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-parent95">
+                                                    <div class="frame-wrapper33">
+                                                        <div class="wrapper19">
+                                                            <div class="master-link50">
+                                                                <img
+                                                                        class="line-roundedsearch-icon66"
+                                                                        alt=""
+                                                                        src="./public/line-roundedpassword2.svg"
+                                                                />
+
+                                                                <a href="/fundraisings/now" class="div162">같이 기부</a>
+                                                                <img
+                                                                        class="line-roundedsearch-icon66"
+                                                                        alt=""
+                                                                        src="./public/line-roundedchevron-down10.svg"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper19">
+                                                        <img
+                                                                class="line-roundedsearch-icon66"
+                                                                alt=""
+                                                                src="./public/line-roundedpassword2.svg"
+                                                        />
+
+                                                        <a href="/promotions/all" class="div155">프로모션</a>
+                                                        <img
+                                                                class="line-roundedsearch-icon66"
+                                                                alt=""
+                                                                src="./public/line-roundedchevron-down10.svg"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <a href="/contact" class="div155">Contact</a>
+                                            </div>
+                                            <img
+                                                    class="line-roundedsearch-icon66"
+                                                    alt=""
+                                                    src="./public/line-roundedchevron-down10.svg"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-set16">
+                        <div class="nav-list16">
+                            <div class="nav-list-inner15">
+                                <div class="master-primary-button-parent15">
+                                    <div
+                                            class="master-primary-button44"
+                                            id="masterPrimaryButton4"
+                                    >
+                                        <img
+                                                class="line-roundedsearch-icon67"
+                                                alt=""
+                                                src="./public/line-roundedsearch13.svg"
+                                        />
+
+                                        <div class="div155">제안하기</div>
+                                        <img
+                                                class="line-roundedsearch-icon67"
+                                                alt=""
+                                                src="./public/line-roundedarrow-right7.svg"
+                                        />
+                                    </div>
+                                    <div
+                                            class="master-primary-button-wrapper14"
+                                            id="frameContainer44"
+                                    >
+                                        <div class="master-primary-button45">
+                                            <img
+                                                    class="line-roundedsearch-icon67"
+                                                    alt=""
+                                                    src="./public/line-roundedsearch30.svg"
+                                            />
+
+                                            <div class="div155">로그인</div>
+                                            <img
+                                                    class="line-roundedsearch-icon67"
+                                                    alt=""
+                                                    src="./public/line-roundedarrow-right12.svg"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img
+                        class="icon-jam-icons-outline-l27"
+                        alt=""
+                        src="./public/line-roundedsearch31.svg"
+                />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    const fileInput = document.getElementById('fileInput');
+    const fileInputLabel = document.getElementById('fileInputLabel');
+    const imageInput = document.getElementById('imageInput');
+    const imageInputLabel = document.getElementById('imageInputLabel');
+
+    fileInput.addEventListener('change', (event) => {
+        const selectedFile = event.target.files[0];
+        if (selectedFile) {
+            fileInputLabel.querySelector('.text2').textContent = selectedFile.name;
+        } else {
+            fileInputLabel.querySelector('.text2').textContent = '선택된 파일 없음';
+        }
+    });
+
+    // On page load, check if there is a previously selected file (e.g., when editing)
+    document.addEventListener('DOMContentLoaded', () => {
+        if (fileInput.files.length > 0) {
+            fileInputLabel.querySelector('.text2').textContent = fileInput.files[0].name;
+        }
+    });
+
+    imageInput.addEventListener('change', (event) => {
+        const selectedImage = event.target.files[0];
+        if (selectedImage) {
+            imageInputLabel.querySelector('.text2').textContent = selectedImage.name;
+        } else {
+            imageInputLabel.querySelector('.text2').textContent = '선택된 파일 없음';
+        }
+    });
+
+    // On page load, check if there is a previously selected image (e.g., when editing)
+    document.addEventListener('DOMContentLoaded', () => {
+        if (imageInput.files.length > 0) {
+            imageInputLabel.querySelector('.text2').textContent = imageInput.files[0].name;
+        }
+    });
+</script>
+</html>

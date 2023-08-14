@@ -1,114 +1,676 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <div th:replace="~{/fragments/header.html :: fragment-header}"></div>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" th:href="@{/css/index.css}">
+    <link rel="stylesheet" th:href="@{/css/global.css}">
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=DM Sans:wght@400;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Kakao:wght@400;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=AppleSDGothicNeoR:wght@400&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&display=swap"
+    />
+    <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
 </head>
 <body>
-<div class="main">
-  <div th:replace="~{/fragments/upheader.html :: fragment-upheader}"></div>
-  <div th:replace="~{/fragments/nav.html :: fragment-nav}"></div>
+<div class="home">
+    <div class="footer">
+        <div class="wrapper">
+            <div class="logo-style-guide-top2"></div>
+        </div>
+        <div class="frame-parent8">
+            <div class="frame">
+                <div class="kakao-corp">
+                    <span>카카오</span>
+                    <b>같이가치</b>
+                </div>
+            </div>
+            <div class="frame-parent9">
+                <div class="parent1">
+                    <div class="kakao-corp">
+                        <p class="p">당신의 착한 마음을 응원합니다.</p>
+                        <p class="p">더 좋은 세상을 꿈꾼다면 지금 시작해보세요.</p>
+                    </div>
+                    <div class="master-primary-button4">
+                        <img
+                                class="line-roundedsearch-icon12"
+                                alt=""
+                                src="./public/line-roundedsearch9.svg"
+                        />
 
-  <div class="filterbutton">
-    <a class="image-24-parent" href="/all">
-      <img class="image-24-icon" alt="" src="../../images/icons/all.png" />
+                        <div class="kakao-corp">제안하기</div>
+                        <img
+                                class="line-roundedsearch-icon12"
+                                alt=""
+                                src="./public/line-roundedarrow-right5.svg"
+                        />
+                    </div>
+                </div>
+                <div class="kakao-corp-parent">
+                    <div class="kakao-corp">@Kakao Corp.</div>
+                    <div class="kakao-corp">도움말</div>
+                    <div class="kakao-corp">이용약관</div>
+                    <div class="kakao-corp">개인정보처리방침</div>
+                    <img
+                            class="social-media-iconfacebook"
+                            alt=""
+                            src="./public/social-media-iconfacebook.svg"
+                    />
 
-      <div class="div8">전체</div>
-    </a>
-    <a class="image-25-parent" href="/child">
-      <img class="image-25-icon" alt="" src="../../images/icons/child.png" />
+                    <img
+                            class="social-media-iconfacebook"
+                            alt=""
+                            src="./public/social-media-icontwitter.svg"
+                    />
 
+                    <img
+                            class="social-media-iconfacebook"
+                            alt=""
+                            src="./public/social-media-iconinstagram.svg"
+                    />
 
-      <div class="div9">어린이</div>
-    </a>
-    <a class="image-26-parent" href="/old">
-      <img class="image-26-icon" alt="" src="../../images/icons/old.png" />
+                    <img
+                            class="social-media-iconfacebook"
+                            alt=""
+                            src="./public/social-media-iconline.svg"
+                    />
+                </div>
+            </div>
+        </div>
+        <div class="footer1">
+            <div class="wrapper">
+                <div class="logo-style-guide-top2"></div>
+            </div>
+            <div class="frame-parent8">
+                <div class="frame">
+                    <div class="kakao-corp">
+                        <span>카카오</span>
+                        <b>같이가치</b>
+                    </div>
+                </div>
+                <div class="frame-parent9">
+                    <div class="parent1">
+                        <div class="kakao-corp">
+                            <p class="p">당신의 착한 마음을 응원합니다.</p>
+                            <p class="p">더 좋은 세상을 꿈꾼다면 지금 시작해보세요.</p>
+                        </div>
+                        <div class="master-primary-button4">
+                            <img
+                                    class="line-roundedsearch-icon12"
+                                    alt=""
+                                    src="./public/line-roundedsearch9.svg"
+                            />
 
-      <div class="div9">어르신</div>
-    </a>
-  </div>
+                            <div class="kakao-corp">제안하기</div>
+                            <img
+                                    class="line-roundedsearch-icon12"
+                                    alt=""
+                                    src="./public/line-roundedarrow-right5.svg"
+                            />
+                        </div>
+                    </div>
+                    <div class="kakao-corp-parent">
+                        <div class="kakao-corp">@Kakao Corp.</div>
+                        <div class="kakao-corp">도움말</div>
+                        <div class="kakao-corp">이용약관</div>
+                        <div class="kakao-corp">개인정보처리방침</div>
+                        <img
+                                class="social-media-iconfacebook"
+                                alt=""
+                                src="./public/social-media-iconfacebook.svg"
+                        />
 
-  <div class="datefilter">
-    <div class="datefilter-child"></div>
-    <div class="parent1">
-      <a class="div5" href="/recommend">추천순</a>
-      <a class="div6" href="/latest">최신순</a>
-      <a class="div7" href="/final">종료임박순</a>
+                        <img
+                                class="social-media-iconfacebook"
+                                alt=""
+                                src="./public/social-media-icontwitter.svg"
+                        />
+
+                        <img
+                                class="social-media-iconfacebook"
+                                alt=""
+                                src="./public/social-media-iconinstagram.svg"
+                        />
+
+                        <img
+                                class="social-media-iconfacebook"
+                                alt=""
+                                src="./public/social-media-iconline.svg"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="mainright">
+        <div class="section">
+            <img
+                    class="placeholder-picture2"
+                    alt=""
+                    src="./public/placeholder--picture@2x.png"
+            />
 
-  <div class="posts">
-    <!-- Iterate through the list of posdts -->
-    <div th:each="post, iterStat : ${posts}" class="content-box" th:classappend="${iterStat.index < 4} ? 'vertical-layout' : 'additional-posts'">
-      <div class="content-box1">
-        <img th:src="${post.imageSrc}" class="placeholder-picture1" alt="Post Image" />
+            <div class="content1">
+                <div class="frame-parent12">
+                    <div class="icon-jam-icons-outline-l-parent1">
+                        <img
+                                class="icon-jam-icons-outline-l9"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--calendar.svg"
+                        />
 
-        <div class="icon-container">
-          <img
-                  class="icon-jam-icons-outline-l"
-                  alt=""
-                  src="./public/icon--jamicons--outline--logos--pictures.svg"
-          />
+                        <div class="paragraph5">
+                            Egestas elit dui scelerisque ut eu purus aliquam vitae
+                            habitasse.
+                        </div>
+                    </div>
+                    <div class="icon-jam-icons-outline-l-parent2">
+                        <img
+                                class="icon-jam-icons-outline-l9"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--luggage1.svg"
+                        />
+
+                        <div class="paragraph5">
+                            Id eros pellentesque facilisi id mollis faucibus commodo enim.
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-parent13">
+                    <div class="icon-jam-icons-outline-l-parent2">
+                        <img
+                                class="icon-jam-icons-outline-l9"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--activity1.svg"
+                        />
+
+                        <div class="paragraph5">
+                            Tristique elementum, ac maecenas enim fringilla placerat
+                            scelerisque semper.
+                        </div>
+                    </div>
+                    <div class="icon-jam-icons-outline-l-parent2">
+                        <img
+                                class="icon-jam-icons-outline-l12"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--car1.svg"
+                        />
+
+                        <div class="paragraph5">
+                            Curabitur magna cras euismod pharetra, mauris malesuada sit
+                            enim, elementum.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="content">
-          <div class="title-category">
-            <div class="category">
-              <p th:text="${post.category}" class="p"></p>
-            </div>
-            <b th:text="${post.title}" class="title"></b>
-          </div>
-          <div th:text="${post.paragraph}" class="paragraph"></div>
-          <div class="user-card">
-            <div class="line-indicator-wrapper">
-              <div class="line-indicator"></div>
-            </div>
-            <div class="details">
-              <div th:text="${post.amount}" class="category1"></div>
-              <div class="category2"></div>
-            </div>
-          </div>
-        </div>
-        <div class="buttons-group">
-          <div class="button-1">
+        <div class="section">
             <img
-                    class="icon-jam-icons-outline-l1"
+                    class="placeholder-picture2"
                     alt=""
-                    src="./public/icon--jamicons--outline--logos--plus.svg"
+                    src="./public/placeholder--picture@2x.png"
             />
 
-            <div class="separator-left"></div>
-            <div class="text-container">
-              <div class="button-text1">Button Text</div>
-            </div>
-            <div class="separator-right"></div>
-            <img
-                    class="icon-jam-icons-outline-l1"
-                    alt=""
-                    src="./public/icon--jamicons--outline--logos--arrowright.svg"
-            />
-          </div>
-          <div class="button-2">
-            <img
-                    class="icon-jam-icons-outline-l1"
-                    alt=""
-                    src="./public/icon--jamicons--outline--logos--plus1.svg"
-            />
+            <div class="content1">
+                <div class="frame-parent12">
+                    <div class="icon-jam-icons-outline-l-parent1">
+                        <img
+                                class="icon-jam-icons-outline-l9"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--calendar.svg"
+                        />
 
-            <div class="text-container">
-              <div class="button-text1">Button Text</div>
+                        <div class="paragraph5">
+                            Egestas elit dui scelerisque ut eu purus aliquam vitae
+                            habitasse.
+                        </div>
+                    </div>
+                    <div class="icon-jam-icons-outline-l-parent2">
+                        <img
+                                class="icon-jam-icons-outline-l9"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--luggage1.svg"
+                        />
+
+                        <div class="paragraph5">
+                            Id eros pellentesque facilisi id mollis faucibus commodo enim.
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-parent13">
+                    <div class="icon-jam-icons-outline-l-parent2">
+                        <img
+                                class="icon-jam-icons-outline-l9"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--activity2.svg"
+                        />
+
+                        <div class="paragraph5">
+                            Tristique elementum, ac maecenas enim fringilla placerat
+                            scelerisque semper.
+                        </div>
+                    </div>
+                    <div class="icon-jam-icons-outline-l-parent2">
+                        <img
+                                class="icon-jam-icons-outline-l12"
+                                alt=""
+                                src="./public/icon--jamicons--outline--logos--car1.svg"
+                        />
+
+                        <div class="paragraph5">
+                            Curabitur magna cras euismod pharetra, mauris malesuada sit
+                            enim, elementum.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img
-                    class="icon-jam-icons-outline-l1"
-                    alt=""
-                    src="./public/icon--jamicons--outline--logos--arrowright1.svg"
-            />
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+    <div class="mainleft">
+        <img
+                class="placeholder-picture4"
+                alt=""
+                src="./public/placeholder--picture2@2x.png"
+        />
 
+        <div class="placeholder-picture-parent">
+            <img
+                    class="placeholder-picture5"
+                    alt=""
+                    src="./public/placeholder--picture3@2x.png"
+            />
 
-  <div th:replace="~{/fragments/footer.html :: fragment-footer}"></div>
+            <div class="parent3">
+                <div class="div18">어르신! 들썩들썩! 한가위 보내세요</div>
+                <div class="div19">
+                    <p class="p">
+                        어르신들 썩썩! 행복한 한가위 보내세요! 잔잔한 가을바람과 함께
+                        풍성한 한가위를
+                    </p>
+                    <p class="p">기원합니다.</p>
+                    <p class="p">
+                        즐거운 시간과 맛있는 음식으로 가족과 함께 행복한 추억을 만드시길
+                        바랍니다. 🌕🎉🍁
+                    </p>
+                </div>
+                <div class="wrapper3">
+                    <div class="div20">❤️287,600 원 모금중</div>
+                </div>
+            </div>
+        </div>
+        <div class="placeholder-picture-parent">
+            <img
+                    class="placeholder-picture5"
+                    alt=""
+                    src="./public/placeholder--picture3@2x.png"
+            />
+
+            <div class="parent3">
+                <div class="div18">어르신! 들썩들썩! 한가위 보내세요</div>
+                <div class="div19">
+                    <p class="p">
+                        어르신들 썩썩! 행복한 한가위 보내세요! 잔잔한 가을바람과 함께
+                        풍성한 한가위를
+                    </p>
+                    <p class="p">기원합니다.</p>
+                    <p class="p">
+                        즐거운 시간과 맛있는 음식으로 가족과 함께 행복한 추억을 만드시길
+                        바랍니다. 🌕🎉🍁
+                    </p>
+                </div>
+                <div class="wrapper3">
+                    <div class="div20">❤️287,600 원 모금중</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="homewelcome">
+        <div class="div24">
+            <p class="p">당신의 착한 마음을</p>
+            <p class="p">같이가치가 응원합니다.❤️</p>
+        </div>
+        <div class="frame-parent16">
+            <div class="ellipse-parent">
+                <div class="frame-inner"></div>
+                <img class="image-36-icon" alt="" src="./public/image-36@2x.png" />
+            </div>
+            <div class="master-input-text">
+                <div class="container1">
+                    <div class="text-icons1">
+                        <div class="input-content1">
+                            <img
+                                    class="line-roundedsearch-icon12"
+                                    alt=""
+                                    src="./public/line-roundedsearch10.svg"
+                            />
+
+                            <div class="kakao-corp">기부 54,356,175건</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header3">
+        <div class="logo-style-guide-top4"></div>
+        <img
+                class="line-roundedpassword-icon10"
+                alt=""
+                src="./public/line-roundedpassword1.svg"
+        />
+
+        <img
+                class="line-roundedchevron-down10"
+                alt=""
+                src="./public/line-roundedchevron-down1.svg"
+        />
+
+        <div class="frame-parent17">
+            <div class="frame-parent18">
+                <div class="parent5">
+                    <div class="div25">
+                        <span>카카오</span>
+                        <b>같이가치</b>
+                    </div>
+                    <div class="frame-wrapper4">
+                        <div class="frame-wrapper5">
+                            <div class="frame-wrapper5">
+                                <div class="link8">
+                                    <div class="master-link6">
+                                        <img
+                                                class="line-roundedpassword-icon11"
+                                                alt=""
+                                                src="./public/line-roundedpassword1.svg"
+                                        />
+
+                                        <div class="frame-parent19">
+                                            <div class="frame-wrapper5">
+                                                <div class="link8">
+                                                    <div class="master-link6">
+                                                        <img
+                                                                class="line-roundedpassword-icon11"
+                                                                alt=""
+                                                                src="./public/line-roundedpassword1.svg"
+                                                        />
+
+                                                        <div class="kakao-corp">같이기부</div>
+                                                        <img
+                                                                class="line-roundedpassword-icon11"
+                                                                alt=""
+                                                                src="./public/line-roundedchevron-down1.svg"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frame-parent20">
+                                                <div class="frame-wrapper5">
+                                                    <div class="link8">
+                                                        <div class="master-link6">
+                                                            <img
+                                                                    class="line-roundedpassword-icon11"
+                                                                    alt=""
+                                                                    src="./public/line-roundedpassword1.svg"
+                                                            />
+
+                                                            <div class="div27">모두의행동</div>
+                                                            <img
+                                                                    class="line-roundedpassword-icon11"
+                                                                    alt=""
+                                                                    src="./public/line-roundedchevron-down1.svg"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="link8">
+                                                    <img
+                                                            class="line-roundedpassword-icon11"
+                                                            alt=""
+                                                            src="./public/line-roundedpassword1.svg"
+                                                    />
+
+                                                    <div class="kakao-corp">더보기</div>
+                                                    <img
+                                                            class="line-roundedpassword-icon11"
+                                                            alt=""
+                                                            src="./public/line-roundedchevron-down1.svg"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="kakao-corp">Contact</div>
+                                        </div>
+                                        <img
+                                                class="line-roundedpassword-icon11"
+                                                alt=""
+                                                src="./public/line-roundedchevron-down1.svg"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons-set2">
+                    <div class="nav-list2">
+                        <div class="nav-list-inner1">
+                            <div class="master-primary-button-parent1">
+                                <div class="master-primary-button6">
+                                    <img
+                                            class="line-roundedsearch-icon12"
+                                            alt=""
+                                            src="./public/line-roundedsearch9.svg"
+                                    />
+
+                                    <div class="kakao-corp">제안하기</div>
+                                    <img
+                                            class="line-roundedsearch-icon12"
+                                            alt=""
+                                            src="./public/line-roundedarrow-right5.svg"
+                                    />
+                                </div>
+                                <div
+                                        class="master-primary-button-frame"
+                                        id="frameContainer38"
+                                >
+                                    <div class="master-primary-button7">
+                                        <img
+                                                class="line-roundedsearch-icon12"
+                                                alt=""
+                                                src="./public/line-roundedsearch12.svg"
+                                        />
+
+                                        <div class="kakao-corp">로그인</div>
+                                        <img
+                                                class="line-roundedsearch-icon12"
+                                                alt=""
+                                                src="./public/line-roundedarrow-right6.svg"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                    class="line-roundedsearch-icon18"
+                    alt=""
+                    src="./public/line-roundedsearch6.svg"
+            />
+        </div>
+        <div class="header4">
+            <div class="logo-style-guide-top4"></div>
+            <img
+                    class="line-roundedpassword-icon10"
+                    alt=""
+                    src="./public/line-roundedpassword1.svg"
+            />
+
+            <img
+                    class="line-roundedchevron-down10"
+                    alt=""
+                    src="./public/line-roundedchevron-down1.svg"
+            />
+
+            <div class="frame-parent17">
+                <div class="frame-parent18">
+                    <div class="parent5">
+                        <a href="/" class="div25">
+                            <span>카카오</span>
+                            <b>같이가치</b>
+                        </a>
+                        <div class="frame-wrapper4">
+                            <div class="frame-wrapper5">
+                                <div class="frame-wrapper5">
+                                    <div class="link8">
+                                        <div class="master-link6">
+                                            <img
+                                                    class="line-roundedpassword-icon11"
+                                                    alt=""
+                                                    src="./public/line-roundedpassword1.svg"
+                                            />
+
+                                            <div class="frame-parent19">
+                                                <div class="frame-wrapper5">
+                                                    <div class="link8">
+                                                        <div class="master-link6">
+                                                            <img
+                                                                    class="line-roundedpassword-icon11"
+                                                                    alt=""
+                                                                    src="./public/line-roundedpassword1.svg"
+                                                            />
+
+                                                            <a href="/" class="kakao-corp">홈</a>
+                                                            <img
+                                                                    class="line-roundedpassword-icon11"
+                                                                    alt=""
+                                                                    src="./public/line-roundedchevron-down1.svg"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="frame-parent20">
+                                                    <div class="frame-wrapper5">
+                                                        <div class="link8">
+                                                            <div class="master-link6">
+                                                                <img
+                                                                        class="line-roundedpassword-icon11"
+                                                                        alt=""
+                                                                        src="./public/line-roundedpassword1.svg"
+                                                                />
+
+                                                                <a href="/fundraisings/now" class="div27">같이 기부</a>
+                                                                <img
+                                                                        class="line-roundedpassword-icon11"
+                                                                        alt=""
+                                                                        src="./public/line-roundedchevron-down1.svg"
+                                                                />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="link8">
+                                                        <img
+                                                                class="line-roundedpassword-icon11"
+                                                                alt=""
+                                                                src="./public/line-roundedpassword1.svg"
+                                                        />
+
+                                                        <a href="/promotions/all" class="kakao-corp">프로모션</a>
+                                                        <img
+                                                                class="line-roundedpassword-icon11"
+                                                                alt=""
+                                                                src="./public/line-roundedchevron-down1.svg"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <a href="/contact" class="kakao-corp">Contact</a>
+                                            </div>
+                                            <img
+                                                    class="line-roundedpassword-icon11"
+                                                    alt=""
+                                                    src="./public/line-roundedchevron-down1.svg"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-set2">
+                        <div class="nav-list2">
+                            <div class="nav-list-inner1">
+                                <div class="master-primary-button-parent1">
+                                    <div
+                                            class="master-primary-button8"
+                                            id="masterPrimaryButton4"
+                                    >
+                                        <img
+                                                class="line-roundedsearch-icon12"
+                                                alt=""
+                                                src="./public/line-roundedsearch9.svg"
+                                        />
+
+                                        <a href="/suggest" class="kakao-corp">제안하기</a>
+                                        <img
+                                                class="line-roundedsearch-icon12"
+                                                alt=""
+                                                src="./public/line-roundedarrow-right5.svg"
+                                        />
+                                    </div>
+                                    <div
+                                            class="master-primary-button-frame"
+                                            id="frameContainer51"
+                                    >
+                                        <div class="master-primary-button7">
+                                            <img
+                                                    class="line-roundedsearch-icon12"
+                                                    alt=""
+                                                    src="./public/line-roundedsearch12.svg"
+                                            />
+
+                                            <a href="/user/login" class="kakao-corp">로그인</a>
+                                            <img
+                                                    class="line-roundedsearch-icon12"
+                                                    alt=""
+                                                    src="./public/line-roundedarrow-right6.svg"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img
+                        class="line-roundedsearch-icon18"
+                        alt=""
+                        src="./public/line-roundedsearch6.svg"
+                />
+            </div>
+        </div>
+    </div>
 </div>
+
 </body>
 </html>

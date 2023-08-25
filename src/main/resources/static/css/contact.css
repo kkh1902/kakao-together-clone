@@ -521,3 +521,18 @@
     color: var(--neutral-colors-color-900);
     font-family: var(--text-single-100-regular);
 }
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 기본 텍스트 색상 유지 */
+    cursor: default; /* 커서를 기본 형태로 변경하여 클릭이나 호버 반응을 없앰 */
+}
+.master-primary-button19 {
+    width: 100px;
+}
+.master-primary-button18 {
+    width: 152px;
+}
+.master-primary-button17 {
+    width: 100px;
+}

@@ -540,3 +540,15 @@
     color: var(--color-gray-300);
     font-family: var(--font-kakao);
 }
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 기본 텍스트 색상 유지 */
+    cursor: default; /* 커서를 기본 형태로 변경하여 클릭이나 호버 반응을 없앰 */
+}
+.master-primary-button40 {
+    width: 100px;
+}
+.master-primary-button41 {
+    width: 152px;
+}

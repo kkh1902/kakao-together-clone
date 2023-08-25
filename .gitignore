@@ -35,3 +35,11 @@ out/
 
 ### VS Code ###
 .vscode/
+
+# Ignore images directory and its contents
+images/
+
+# Ignore image files with specific extensions (example: jpg, png, gif)
+*.jpg
+*.png
+*.gif

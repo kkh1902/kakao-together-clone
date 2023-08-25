@@ -33,580 +33,38 @@
 <body>
 <div class="main">
     <div class="posts">
-        <div class="content-box">
+        <div class="content-box"  th:each="item : ${posts}">
             <div class="content-box1">
                 <img
                         class="placeholder-picture"
                         alt=""
-                        src="./public/placeholder--picture@2x.png"
+                        src="../public/placeholder--picture@2x.png"
                 />
 
                 <div class="icon-container">
                     <img
                             class="icon-jam-icons-outline-l"
                             alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures.svg"
+                            src="../public/icon--jamicons--outline--logos--pictures.svg"
                     />
                 </div>
                 <div class="content">
                     <div class="title-category">
                         <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
+                            <p class="p" th:text="${item.category}"></p>
+                            <p class="p" th:text="${item.category}"></p>
                         </div>
-                        <b class="title">Article Title </b>
+                        <b class="title" th:text="${item.title}"></b>
                     </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
+                    <div class="paragraph" th:text="${item.paragraph}"></div>
                     <div class="user-card">
                         <div class="line-indicator-wrapper">
                             <div class="line-indicator"></div>
                         </div>
                         <div class="details">
-                            <div class="category1">721,690원</div>
+                            <div class="category1" th:text="${item.targetAmount}"></div>
                             <div class="category2"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus1.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright1.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright2.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus1.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright3.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright2.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus1.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright3.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-box6" id="contentBoxContainer7">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright2.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus1.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright3.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="posts1">
-        <div class="content-box">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus2.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright4.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus3.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright5.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus2.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright4.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus3.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright5.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />s
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus2.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright4.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus3.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright5.svg"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="content-box">
-            <div class="content-box1">
-                <img
-                        class="placeholder-picture"
-                        alt=""
-                        src="./public/placeholder--picture@2x.png"
-                />
-
-                <div class="icon-container">
-                    <img
-                            class="icon-jam-icons-outline-l"
-                            alt=""
-                            src="./public/icon--jamicons--outline--logos--pictures1.svg"
-                    />
-                </div>
-                <div class="content">
-                    <div class="title-category">
-                        <div class="category">
-                            <p class="p">독거 노인 어르신의 건강한 여름나기,</p>
-                            <p class="p">보양식으로 이겨내요!</p>
-                        </div>
-                        <b class="title">Article Title </b>
-                    </div>
-                    <div class="paragraph">안동시 종합 사회 복지관</div>
-                    <div class="user-card">
-                        <div class="line-indicator-wrapper">
-                            <div class="line-indicator"></div>
-                        </div>
-                        <div class="details">
-                            <div class="category1">721,690원</div>
-                            <div class="category2"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="buttons-group">
-                    <div class="button-1">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus2.svg"
-                        />
-
-                        <div class="separator-left"></div>
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <div class="separator-right"></div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright4.svg"
-                        />
-                    </div>
-                    <div class="button-2">
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--plus3.svg"
-                        />
-
-                        <div class="text-container">
-                            <div class="button-text">Button Text</div>
-                        </div>
-                        <img
-                                class="icon-jam-icons-outline-l1"
-                                alt=""
-                                src="./public/icon--jamicons--outline--logos--arrowright5.svg"
-                        />
                     </div>
                 </div>
             </div>
@@ -622,17 +80,17 @@
     </div>
     <div class="filterbutton">
         <div class="image-24-parent">
-            <img class="image-24-icon" alt="" src="./public/image-24@2x.png" />
+            <img class="image-24-icon" alt="" src="../public/image-24@2x.png" />
 
             <div class="div3">전체</div>
         </div>
         <div class="image-25-parent">
-            <img class="image-25-icon" alt="" src="./public/image-25@2x.png" />
+            <img class="image-25-icon" alt="" src="../public/image-25@2x.png" />
 
             <div class="div4">어린이</div>
         </div>
         <div class="image-26-parent">
-            <img class="image-26-icon" alt="" src="./public/image-26@2x.png" />
+            <img class="image-26-icon" alt="" src="../public/image-26@2x.png" />
 
             <div class="div4">어르신</div>
         </div>
@@ -643,42 +101,42 @@
                 <img
                         class="line-roundedpassword-icon"
                         alt=""
-                        src="./public/line-roundedpassword.svg"
+                        src="../public/line-roundedpassword.svg"
                 />
 
                 <div class="sss">모금중</div>
                 <img
                         class="line-roundedpassword-icon"
                         alt=""
-                        src="./public/line-roundedchevron-down.svg"
+                        src="../public/line-roundedchevron-down.svg"
                 />
             </div>
             <div class="link">
                 <img
                         class="line-roundedpassword-icon"
                         alt=""
-                        src="./public/line-roundedpassword.svg"
+                        src="../public/line-roundedpassword.svg"
                 />
 
                 <div class="sss">모금후기</div>
                 <img
                         class="line-roundedpassword-icon"
                         alt=""
-                        src="./public/line-roundedchevron-down.svg"
+                        src="../public/line-roundedchevron-down.svg"
                 />
             </div>
             <div class="link">
                 <img
                         class="line-roundedpassword-icon"
                         alt=""
-                        src="./public/line-roundedpassword.svg"
+                        src="../public/line-roundedpassword.svg"
                 />
 
                 <div class="sss">나눔캠페인</div>
                 <img
                         class="line-roundedpassword-icon"
                         alt=""
-                        src="./public/line-roundedchevron-down.svg"
+                        src="../public/line-roundedchevron-down.svg"
                 />
             </div>
         </div>
@@ -704,14 +162,14 @@
                         <img
                                 class="line-roundedsearch-icon"
                                 alt=""
-                                src="./public/line-roundedsearch.svg"
+                                src="../public/line-roundedsearch.svg"
                         />
 
                         <div class="sss">제안하기</div>
                         <img
                                 class="line-roundedsearch-icon"
                                 alt=""
-                                src="./public/line-roundedarrow-right.svg"
+                                src="../public/line-roundedarrow-right.svg"
                         />
                     </div>
                 </div>
@@ -723,25 +181,25 @@
                     <img
                             class="social-media-iconfacebook"
                             alt=""
-                            src="./public/social-media-iconfacebook.svg"
+                            src="../public/social-media-iconfacebook.svg"
                     />
 
                     <img
                             class="social-media-iconfacebook"
                             alt=""
-                            src="./public/social-media-icontwitter.svg"
+                            src="../public/social-media-icontwitter.svg"
                     />
 
                     <img
                             class="social-media-iconfacebook"
                             alt=""
-                            src="./public/social-media-iconinstagram.svg"
+                            src="../public/social-media-iconinstagram.svg"
                     />
 
                     <img
                             class="social-media-iconfacebook"
                             alt=""
-                            src="./public/social-media-iconline.svg"
+                            src="../public/social-media-iconline.svg"
                     />
                 </div>
             </div>
@@ -767,14 +225,14 @@
                             <img
                                     class="line-roundedsearch-icon"
                                     alt=""
-                                    src="./public/line-roundedsearch.svg"
+                                    src="../public/line-roundedsearch.svg"
                             />
 
                             <div class="sss">제안하기</div>
                             <img
                                     class="line-roundedsearch-icon"
                                     alt=""
-                                    src="./public/line-roundedarrow-right.svg"
+                                    src="../public/line-roundedarrow-right.svg"
                             />
                         </div>
                     </div>
@@ -786,25 +244,25 @@
                         <img
                                 class="social-media-iconfacebook"
                                 alt=""
-                                src="./public/social-media-iconfacebook.svg"
+                                src="../public/social-media-iconfacebook.svg"
                         />
 
                         <img
                                 class="social-media-iconfacebook"
                                 alt=""
-                                src="./public/social-media-icontwitter.svg"
+                                src="../public/social-media-icontwitter.svg"
                         />
 
                         <img
                                 class="social-media-iconfacebook"
                                 alt=""
-                                src="./public/social-media-iconinstagram.svg"
+                                src="../public/social-media-iconinstagram.svg"
                         />
 
                         <img
                                 class="social-media-iconfacebook"
                                 alt=""
-                                src="./public/social-media-iconline.svg"
+                                src="../public/social-media-iconline.svg"
                         />
                     </div>
                 </div>
@@ -816,19 +274,19 @@
         <img
                 class="line-roundedpassword-icon3"
                 alt=""
-                src="./public/line-roundedpassword.svg"
+                src="../public/line-roundedpassword.svg"
         />
 
         <img
                 class="line-roundedchevron-down3"
                 alt=""
-                src="./public/line-roundedchevron-down.svg"
+                src="../public/line-roundedchevron-down.svg"
         />
 
         <div class="frame-parent2">
             <div class="frame-parent3">
                 <div class="parent2">
-                    <a href="/static" class="div19">
+                    <a href="/" class="div19">
                         <span>카카오</span>
                         <b>같이가치</b>
                     </a>
@@ -840,7 +298,7 @@
                                         <img
                                                 class="line-roundedpassword-icon"
                                                 alt=""
-                                                src="./public/line-roundedpassword.svg"
+                                                src="../public/line-roundedpassword.svg"
                                         />
 
                                         <div class="frame-parent4">
@@ -850,14 +308,14 @@
                                                         <img
                                                                 class="line-roundedpassword-icon"
                                                                 alt=""
-                                                                src="./public/line-roundedpassword.svg"
+                                                                src="../public/line-roundedpassword.svg"
                                                         />
 
                                                         <div class="sss">같이기부</div>
                                                         <img
                                                                 class="line-roundedpassword-icon"
                                                                 alt=""
-                                                                src="./public/line-roundedchevron-down.svg"
+                                                                src="../public/line-roundedchevron-down.svg"
                                                         />
                                                     </div>
                                                 </div>
@@ -869,14 +327,14 @@
                                                             <img
                                                                     class="line-roundedpassword-icon"
                                                                     alt=""
-                                                                    src="./public/line-roundedpassword.svg"
+                                                                    src="../public/line-roundedpassword.svg"
                                                             />
 
                                                             <div class="div21">모두의행동</div>
                                                             <img
                                                                     class="line-roundedpassword-icon"
                                                                     alt=""
-                                                                    src="./public/line-roundedchevron-down.svg"
+                                                                    src="../public/line-roundedchevron-down.svg"
                                                             />
                                                         </div>
                                                     </div>
@@ -885,14 +343,14 @@
                                                     <img
                                                             class="line-roundedpassword-icon"
                                                             alt=""
-                                                            src="./public/line-roundedpassword.svg"
+                                                            src="../public/line-roundedpassword.svg"
                                                     />
 
                                                     <div class="sss">더보기</div>
                                                     <img
                                                             class="line-roundedpassword-icon"
                                                             alt=""
-                                                            src="./public/line-roundedchevron-down.svg"
+                                                            src="../public/line-roundedchevron-down.svg"
                                                     />
                                                 </div>
                                             </div>
@@ -901,7 +359,7 @@
                                         <img
                                                 class="line-roundedpassword-icon"
                                                 alt=""
-                                                src="./public/line-roundedchevron-down.svg"
+                                                src="../public/line-roundedchevron-down.svg"
                                         />
                                     </div>
                                 </div>
@@ -920,14 +378,14 @@
                                     <img
                                             class="line-roundedsearch-icon"
                                             alt=""
-                                            src="./public/line-roundedsearch.svg"
+                                            src="../public/line-roundedsearch.svg"
                                     />
 
                                     <div class="sss">제안하기</div>
                                     <img
                                             class="line-roundedsearch-icon"
                                             alt=""
-                                            src="./public/line-roundedarrow-right.svg"
+                                            src="../public/line-roundedarrow-right.svg"
                                     />
                                 </div>
                                 <div
@@ -938,14 +396,14 @@
                                         <img
                                                 class="line-roundedsearch-icon"
                                                 alt=""
-                                                src="./public/line-roundedsearch1.svg"
+                                                src="../public/line-roundedsearch1.svg"
                                         />
 
                                         <div class="sss">로그인</div>
                                         <img
                                                 class="line-roundedsearch-icon"
                                                 alt=""
-                                                src="./public/line-roundedarrow-right1.svg"
+                                                src="../public/line-roundedarrow-right1.svg"
                                         />
                                     </div>
                                 </div>
@@ -957,7 +415,7 @@
             <img
                     class="line-roundedsearch-icon4"
                     alt=""
-                    src="./public/line-roundedsearch2.svg"
+                    src="../public/line-roundedsearch2.svg"
             />
         </div>
         <div class="header1">
@@ -965,19 +423,19 @@
             <img
                     class="line-roundedpassword-icon3"
                     alt=""
-                    src="./public/line-roundedpassword.svg"
+                    src="../public/line-roundedpassword.svg"
             />
 
             <img
                     class="line-roundedchevron-down3"
                     alt=""
-                    src="./public/line-roundedchevron-down.svg"
+                    src="../public/line-roundedchevron-down.svg"
             />
 
             <div class="frame-parent2">
                 <div class="frame-parent3">
                     <div class="parent2">
-                        <a href="/static" class="div19">
+                        <a href="/" class="div19">
                             <span>카카오</span>
                             <b>같이가치</b>
                         </a>
@@ -989,7 +447,7 @@
                                             <img
                                                     class="line-roundedpassword-icon"
                                                     alt=""
-                                                    src="./public/line-roundedpassword.svg"
+                                                    src="../public/line-roundedpassword.svg"
                                             />
 
                                             <div class="frame-parent4">
@@ -999,14 +457,14 @@
                                                             <img
                                                                     class="line-roundedpassword-icon"
                                                                     alt=""
-                                                                    src="./public/line-roundedpassword.svg"
+                                                                    src="../public/line-roundedpassword.svg"
                                                             />
 
-                                                            <a href="/static" class="sss">홈</a>
+                                                            <a href="/" class="sss">홈</a>
                                                             <img
                                                                     class="line-roundedpassword-icon"
                                                                     alt=""
-                                                                    src="./public/line-roundedchevron-down.svg"
+                                                                    src="../public/line-roundedchevron-down.svg"
                                                             />
                                                         </div>
                                                     </div>
@@ -1018,14 +476,14 @@
                                                                 <img
                                                                         class="line-roundedpassword-icon"
                                                                         alt=""
-                                                                        src="./public/line-roundedpassword.svg"
+                                                                        src="../public/line-roundedpassword.svg"
                                                                 />
 
-                                                                <a href="/fundraising/now" class="div21">같이기부</a>
+                                                                <a href="/fundraisings/now" class="div21">같이기부</a>
                                                                 <img
                                                                         class="line-roundedpassword-icon"
                                                                         alt=""
-                                                                        src="./public/line-roundedchevron-down.svg"
+                                                                        src="../public/line-roundedchevron-down.svg"
                                                                 />
                                                             </div>
                                                         </div>
@@ -1034,14 +492,14 @@
                                                         <img
                                                                 class="line-roundedpassword-icon"
                                                                 alt=""
-                                                                src="./public/line-roundedpassword.svg"
+                                                                src="../public/line-roundedpassword.svg"
                                                         />
 
                                                         <a href="/promotions" class="sss">프로모션</a>
                                                         <img
                                                                 class="line-roundedpassword-icon"
                                                                 alt=""
-                                                                src="./public/line-roundedchevron-down.svg"
+                                                                src="../public/line-roundedchevron-down.svg"
                                                         />
                                                     </div>
                                                 </div>
@@ -1050,7 +508,7 @@
                                             <img
                                                     class="line-roundedpassword-icon"
                                                     alt=""
-                                                    src="./public/line-roundedchevron-down.svg"
+                                                    src="../public/line-roundedchevron-down.svg"
                                             />
                                         </div>
                                     </div>
@@ -1069,14 +527,14 @@
                                         <img
                                                 class="line-roundedsearch-icon"
                                                 alt=""
-                                                src="./public/line-roundedsearch.svg"
+                                                src="../public/line-roundedsearch.svg"
                                         />
 
                                         <div class="sss">제안하기</div>
                                         <img
                                                 class="line-roundedsearch-icon"
                                                 alt=""
-                                                src="./public/line-roundedarrow-right.svg"
+                                                src="../public/line-roundedarrow-right.svg"
                                         />
                                     </div>
                                     <div
@@ -1087,14 +545,14 @@
                                             <img
                                                     class="line-roundedsearch-icon"
                                                     alt=""
-                                                    src="./public/line-roundedsearch1.svg"
+                                                    src="../public/line-roundedsearch1.svg"
                                             />
 
                                             <div class="sss">로그인</div>
                                             <img
                                                     class="line-roundedsearch-icon"
                                                     alt=""
-                                                    src="./public/line-roundedarrow-right1.svg"
+                                                    src="../public/line-roundedarrow-right1.svg"
                                             />
                                         </div>
                                     </div>
@@ -1106,7 +564,7 @@
                 <img
                         class="line-roundedsearch-icon4"
                         alt=""
-                        src="./public/line-roundedsearch2.svg"
+                        src="../public/line-roundedsearch2.svg"
                 />
             </div>
         </div>
@@ -1124,7 +582,7 @@
     var masterPrimaryButton2 = document.getElementById("masterPrimaryButton2");
     if (masterPrimaryButton2) {
         masterPrimaryButton2.addEventListener("click", function (e) {
-            window.location.href = "./suggest.html";
+            window.location.href = "../suggest/suggest.html";
         });
     }
 
@@ -1138,7 +596,7 @@
     var masterPrimaryButton4 = document.getElementById("masterPrimaryButton4");
     if (masterPrimaryButton4) {
         masterPrimaryButton4.addEventListener("click", function (e) {
-            window.location.href = "./suggest.html";
+            window.location.href = "../suggest/suggest.html";
         });
     }
 

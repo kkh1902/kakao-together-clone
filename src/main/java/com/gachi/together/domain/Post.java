@@ -19,21 +19,20 @@ public class Post extends BaseTimeEntity {
     @JoinColumn(name = "member_id")
     private Member member;
 
-    private String subTopic;
-    private String topic;
     private String title;
-    private String category;
     private String author;
-    private String paragraph;
-    private String amount;
+    private String category;
     private Double targetAmount;
-    private LocalDateTime createdDate;
-    private String thumbnail;
+    private Double amountReceived;
+    private String thumbnail; // Storing the thumbnail image file name or URL
+    private String subTopic;
+    private String paragraph;
     private String bodyTopic1;
     private String text;
-    private String imageSrc;
+    private String imageSrc; // Storing the main image file name or URL
     private String videoLink;
     private String tag1;
+    private LocalDateTime createdDate;
     private LocalDateTime endDate;
     private String mainCategory;
     private Double finalAmount;
@@ -69,5 +68,17 @@ public class Post extends BaseTimeEntity {
 
     public void setLongText(String longText) {
         this.longText = longText;
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "id=" + id +
+                ", member=" + member +
+                ", subTopic='" + subTopic + '\'' +
+                ", title='" + title + '\'' +
+                // ... include other fields ...
+                ", finalAmount=" + finalAmount +
+                '}';
     }
 }

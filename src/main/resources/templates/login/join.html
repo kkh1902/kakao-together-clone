@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
-  <link rel="stylesheet" href="./global.css" />
-  <link rel="stylesheet" href="./signup.css" />
+  <link rel="stylesheet" th:href="@{/css/global.css}">
+  <link rel="stylesheet" th:href="@{/css/join.css}">
   <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Kakao:wght@400;700&display=swap"
@@ -56,7 +56,7 @@
       <img
               class="eye-password-logo"
               alt=""
-              src="./public/eye-password-logo@2x.png"
+              src="../public/eye-password-logo@2x.png"
       />
 
       <div class="enter-your-password">Enter Your Password</div>
@@ -71,7 +71,7 @@
       <div class="or-text">Or With</div>
     </div>
     <div class="kakao-login">
-      <img class="icon-kakao1" alt="" src="./public/icon--kakao1.svg" />
+      <img class="icon-kakao1" alt="" src="../public/icon--kakao1.svg" />
 
       <div class="label1">
         <div class="login-with-kakao1">Login with Kakao</div>
@@ -83,11 +83,11 @@
       <img
               class="google-logo-icon"
               alt=""
-              src="./public/google-logo@2x.png"
+              src="../public/google-logo@2x.png"
       />
     </div>
     <div class="alredy-account-login">
-      <div class="login">Login</div>
+      <a href="/user/login" class="login">Login</a>
       <div class="already-have-an">Already have an account?</div>
     </div>
   </div>
@@ -97,10 +97,10 @@
     </div>
     <div class="frame-parent79">
       <div class="wrapper18">
-        <div class="div130">
+        <a href="/" class="div130">
           <span>카카오</span>
           <b>같이가치</b>
-        </div>
+        </a>
       </div>
       <div class="frame-parent80">
         <div class="parent32">
@@ -112,14 +112,14 @@
             <img
                     class="line-roundedsearch-icon60"
                     alt=""
-                    src="./public/line-roundedsearch22.svg"
+                    src="../public/line-roundedsearch22.svg"
             />
 
-            <div class="div130">제안하기</div>
+            <a href="/suggest" class="div130">제안하기</a>
             <img
                     class="line-roundedsearch-icon60"
                     alt=""
-                    src="./public/line-roundedarrow-right4.svg"
+                    src="../public/line-roundedarrow-right4.svg"
             />
           </div>
         </div>
@@ -131,25 +131,25 @@
           <img
                   class="social-media-iconfacebook8"
                   alt=""
-                  src="./public/social-media-iconfacebook2.svg"
+                  src="../public/social-media-iconfacebook2.svg"
           />
 
           <img
                   class="social-media-iconfacebook8"
                   alt=""
-                  src="./public/social-media-icontwitter2.svg"
+                  src="../public/social-media-icontwitter2.svg"
           />
 
           <img
                   class="social-media-iconfacebook8"
                   alt=""
-                  src="./public/social-media-iconinstagram.svg"
+                  src="../public/social-media-iconinstagram.svg"
           />
 
           <img
                   class="social-media-iconfacebook8"
                   alt=""
-                  src="./public/social-media-iconline.svg"
+                  src="../public/social-media-iconline.svg"
           />
         </div>
       </div>
@@ -160,10 +160,10 @@
       </div>
       <div class="frame-parent79">
         <div class="wrapper18">
-          <div class="div130">
+          <a href="/" class="div130">
             <span>카카오</span>
             <b>같이가치</b>
-          </div>
+          </a>
         </div>
         <div class="frame-parent80">
           <div class="parent32">
@@ -175,14 +175,14 @@
               <img
                       class="line-roundedsearch-icon60"
                       alt=""
-                      src="./public/line-roundedsearch22.svg"
+                      src="../public/line-roundedsearch22.svg"
               />
 
               <div class="div130">제안하기</div>
               <img
                       class="line-roundedsearch-icon60"
                       alt=""
-                      src="./public/line-roundedarrow-right4.svg"
+                      src="../public/line-roundedarrow-right4.svg"
               />
             </div>
           </div>
@@ -194,25 +194,25 @@
             <img
                     class="social-media-iconfacebook8"
                     alt=""
-                    src="./public/social-media-iconfacebook2.svg"
+                    src="../public/social-media-iconfacebook2.svg"
             />
 
             <img
                     class="social-media-iconfacebook8"
                     alt=""
-                    src="./public/social-media-icontwitter2.svg"
+                    src="../public/social-media-icontwitter2.svg"
             />
 
             <img
                     class="social-media-iconfacebook8"
                     alt=""
-                    src="./public/social-media-iconinstagram.svg"
+                    src="../public/social-media-iconinstagram.svg"
             />
 
             <img
                     class="social-media-iconfacebook8"
                     alt=""
-                    src="./public/social-media-iconline.svg"
+                    src="../public/social-media-iconline.svg"
             />
           </div>
         </div>
@@ -224,13 +224,13 @@
     <img
             class="line-roundedpassword-icon73"
             alt=""
-            src="./public/line-roundedpassword6.svg"
+            src="../public/line-roundedpassword6.svg"
     />
 
     <img
             class="line-roundedchevron-down75"
             alt=""
-            src="./public/line-roundedchevron-down6.svg"
+            src="../public/line-roundedchevron-down6.svg"
     />
 
     <div class="frame-parent83">
@@ -248,7 +248,7 @@
                     <img
                             class="line-roundedpassword-icon74"
                             alt=""
-                            src="./public/line-roundedpassword4.svg"
+                            src="../public/line-roundedpassword4.svg"
                     />
 
                     <div class="frame-parent85">
@@ -258,14 +258,14 @@
                             <img
                                     class="line-roundedpassword-icon74"
                                     alt=""
-                                    src="./public/line-roundedpassword4.svg"
+                                    src="../public/line-roundedpassword4.svg"
                             />
 
-                            <div class="div130">같이기부</div>
+                            <a href="/" class="div130">홈</a>
                             <img
                                     class="line-roundedpassword-icon74"
                                     alt=""
-                                    src="./public/line-roundedchevron-down4.svg"
+                                    src="../public/line-roundedchevron-down4.svg"
                             />
                           </div>
                         </div>
@@ -277,14 +277,14 @@
                               <img
                                       class="line-roundedpassword-icon74"
                                       alt=""
-                                      src="./public/line-roundedpassword6.svg"
+                                      src="../public/line-roundedpassword6.svg"
                               />
 
-                              <div class="div142">모두의행동</div>
+                              <a href="/fundraisings/now" class="div142">같이 기부</a>
                               <img
                                       class="line-roundedpassword-icon74"
                                       alt=""
-                                      src="./public/line-roundedchevron-down6.svg"
+                                      src="../public/line-roundedchevron-down6.svg"
                               />
                             </div>
                           </div>
@@ -293,14 +293,14 @@
                           <img
                                   class="line-roundedpassword-icon74"
                                   alt=""
-                                  src="./public/line-roundedpassword6.svg"
+                                  src="../public/line-roundedpassword6.svg"
                           />
 
                           <div class="div130">더보기</div>
                           <img
                                   class="line-roundedpassword-icon74"
                                   alt=""
-                                  src="./public/line-roundedchevron-down6.svg"
+                                  src="../public/line-roundedchevron-down6.svg"
                           />
                         </div>
                       </div>
@@ -309,7 +309,7 @@
                     <img
                             class="line-roundedpassword-icon74"
                             alt=""
-                            src="./public/line-roundedchevron-down6.svg"
+                            src="../public/line-roundedchevron-down6.svg"
                     />
                   </div>
                 </div>
@@ -328,14 +328,14 @@
                   <img
                           class="line-roundedsearch-icon60"
                           alt=""
-                          src="./public/line-roundedsearch24.svg"
+                          src="../public/line-roundedsearch24.svg"
                   />
 
                   <div class="div130">제안하기</div>
                   <img
                           class="line-roundedsearch-icon60"
                           alt=""
-                          src="./public/line-roundedarrow-right4.svg"
+                          src="../public/line-roundedarrow-right4.svg"
                   />
                 </div>
                 <div
@@ -346,14 +346,14 @@
                     <img
                             class="line-roundedsearch-icon60"
                             alt=""
-                            src="./public/line-roundedsearch25.svg"
+                            src="../public/line-roundedsearch25.svg"
                     />
 
                     <div class="div130">로그인</div>
                     <img
                             class="line-roundedsearch-icon60"
                             alt=""
-                            src="./public/line-roundedarrow-right9.svg"
+                            src="../public/line-roundedarrow-right9.svg"
                     />
                   </div>
                 </div>
@@ -365,7 +365,7 @@
       <img
               class="line-roundedsearch-icon64"
               alt=""
-              src="./public/line-roundedsearch20.svg"
+              src="../public/line-roundedsearch20.svg"
       />
     </div>
     <div class="header17">
@@ -373,13 +373,13 @@
       <img
               class="line-roundedpassword-icon73"
               alt=""
-              src="./public/line-roundedpassword6.svg"
+              src="../public/line-roundedpassword6.svg"
       />
 
       <img
               class="line-roundedchevron-down75"
               alt=""
-              src="./public/line-roundedchevron-down6.svg"
+              src="../public/line-roundedchevron-down6.svg"
       />
 
       <div class="frame-parent83">
@@ -397,7 +397,7 @@
                       <img
                               class="line-roundedpassword-icon74"
                               alt=""
-                              src="./public/line-roundedpassword4.svg"
+                              src="../public/line-roundedpassword4.svg"
                       />
 
                       <div class="frame-parent85">
@@ -407,14 +407,14 @@
                               <img
                                       class="line-roundedpassword-icon74"
                                       alt=""
-                                      src="./public/line-roundedpassword4.svg"
+                                      src="../public/line-roundedpassword4.svg"
                               />
 
-                              <div class="div130">같이기부</div>
+                              <a href="/" class="div130">홈</a>
                               <img
                                       class="line-roundedpassword-icon74"
                                       alt=""
-                                      src="./public/line-roundedchevron-down4.svg"
+                                      src="../public/line-roundedchevron-down4.svg"
                               />
                             </div>
                           </div>
@@ -426,14 +426,14 @@
                                 <img
                                         class="line-roundedpassword-icon74"
                                         alt=""
-                                        src="./public/line-roundedpassword6.svg"
+                                        src="../public/line-roundedpassword6.svg"
                                 />
 
-                                <div class="div142">모두의행동</div>
+                                <a href="/fundraisings/now" class="div142">같이 기부</a>
                                 <img
                                         class="line-roundedpassword-icon74"
                                         alt=""
-                                        src="./public/line-roundedchevron-down6.svg"
+                                        src="../public/line-roundedchevron-down6.svg"
                                 />
                               </div>
                             </div>
@@ -442,23 +442,23 @@
                             <img
                                     class="line-roundedpassword-icon74"
                                     alt=""
-                                    src="./public/line-roundedpassword6.svg"
+                                    src="../public/line-roundedpassword6.svg"
                             />
 
-                            <div class="div130">더보기</div>
+                            <a href="/promotions/all" class="div130">프로모션</a>
                             <img
                                     class="line-roundedpassword-icon74"
                                     alt=""
-                                    src="./public/line-roundedchevron-down6.svg"
+                                    src="../public/line-roundedchevron-down6.svg"
                             />
                           </div>
                         </div>
-                        <div class="div130">Contact</div>
+                        <a href="/contact" class="div130">Contact</a>
                       </div>
                       <img
                               class="line-roundedpassword-icon74"
                               alt=""
-                              src="./public/line-roundedchevron-down6.svg"
+                              src="../public/line-roundedchevron-down6.svg"
                       />
                     </div>
                   </div>
@@ -477,14 +477,14 @@
                     <img
                             class="line-roundedsearch-icon60"
                             alt=""
-                            src="./public/line-roundedsearch24.svg"
+                            src="../public/line-roundedsearch24.svg"
                     />
 
-                    <div class="div130">제안하기</div>
+                    <a href="/suggest" class="div130">제안하기</a>
                     <img
                             class="line-roundedsearch-icon60"
                             alt=""
-                            src="./public/line-roundedarrow-right4.svg"
+                            src="../public/line-roundedarrow-right4.svg"
                     />
                   </div>
                   <div
@@ -495,14 +495,14 @@
                       <img
                               class="line-roundedsearch-icon60"
                               alt=""
-                              src="./public/line-roundedsearch25.svg"
+                              src="../public/line-roundedsearch25.svg"
                       />
 
-                      <div class="div130">로그인</div>
+                      <a href="/user/login" class="div130">로그인</a>
                       <img
                               class="line-roundedsearch-icon60"
                               alt=""
-                              src="./public/line-roundedarrow-right9.svg"
+                              src="../public/line-roundedarrow-right9.svg"
                       />
                     </div>
                   </div>
@@ -514,7 +514,7 @@
         <img
                 class="line-roundedsearch-icon64"
                 alt=""
-                src="./public/line-roundedsearch20.svg"
+                src="../public/line-roundedsearch20.svg"
         />
       </div>
     </div>

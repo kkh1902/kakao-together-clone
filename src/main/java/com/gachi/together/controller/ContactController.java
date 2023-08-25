@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/contact")
 public class ContactController {
 
-    @GetMapping
-    public String fundraisingsnow(Model model) {
+    @GetMapping()
+    public String contactPage(Model model) {
         return "contact/contact"; // Return the Thymeleaf template name
     }
 

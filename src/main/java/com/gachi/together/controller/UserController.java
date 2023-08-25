@@ -15,4 +15,9 @@ public class UserController {
     public String loginpage(Model model) {
         return "login/login"; // Return the Thymeleaf template name
     }
+
+    @GetMapping("/signup")
+    public String signuppage(Model model) {
+        return "login/join"; // Return the Thymeleaf template name
+    }
 }

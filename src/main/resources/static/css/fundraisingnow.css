@@ -555,6 +555,7 @@
     gap: var(--gap-5xs);
 }
 .master-primary-button2 {
+    width: 100px;
     justify-content: flex-end;
     cursor: pointer;
 }
@@ -1199,6 +1200,7 @@
 }
 .master-primary-button2,
 .master-primary-button3 {
+    width: 100px;
     border-radius: var(--br-11xl);
     background-color: var(--default-white);
     border: 2px solid var(--color-lightgray-100);
@@ -1209,6 +1211,7 @@
     gap: var(--gap-5xs);
 }
 .master-primary-button2 {
+    width: 100px;
     justify-content: flex-end;
     cursor: pointer;
 }
@@ -1314,4 +1317,8 @@ a {
 
 .master-primary-button15 {
     width: 80px;
+}
+
+.master-primary-button3 {
+    width: 152px;
 }
